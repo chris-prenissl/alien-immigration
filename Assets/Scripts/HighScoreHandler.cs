@@ -56,8 +56,6 @@ public class HighScoreHandler : MonoBehaviour
                 Debug.Log("Could not set player name");
             }
         });
-
-
     }
 
     #endregion

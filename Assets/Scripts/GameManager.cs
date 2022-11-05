@@ -17,7 +17,8 @@ namespace AlienImmigration
         BoothTime,
         DecisionCheck,
         Highscore,
-        Ending
+        Ending,
+        Quit,
     }
 
     public class GameManager : MonoBehaviour
@@ -28,6 +29,7 @@ namespace AlienImmigration
         [SerializeField] private Canvas menuCanvas;
         [SerializeField] private Canvas creditsCanvas;
         [SerializeField] private Canvas highscoreCanvas;
+        [SerializeField] private Canvas highscoreCanvasEndOfGame;
 
         #endregion
 
@@ -57,17 +59,18 @@ namespace AlienImmigration
             switch (state)
             {
                 case (GameState.MainMenu):
-                    menuCanvas.gameObject.SetActive(true);
-                    creditsCanvas.gameObject.SetActive(false);
+                    Instance.menuCanvas.gameObject.SetActive(true);
+                    Instance.creditsCanvas.gameObject.SetActive(false);
+                    Instance.highscoreCanvas.gameObject.SetActive(false);
                     break;
 
                 case (GameState.Credits):
-                    menuCanvas.gameObject.SetActive(false);
-                    creditsCanvas.gameObject.SetActive(true);
+                    Instance.menuCanvas.gameObject.SetActive(false);
+                    Instance.creditsCanvas.gameObject.SetActive(true);
                     break;
 
                 case (GameState.Starting):
-                    menuCanvas.gameObject.SetActive(false);
+                    Instance.menuCanvas.gameObject.SetActive(false);
                     break;
 
                 case (GameState.NewAlien):
@@ -77,11 +80,15 @@ namespace AlienImmigration
                     break;
 
                 case (GameState.Highscore):
-                    highscoreCanvas.gameObject.SetActive(true);
-                    menuCanvas.gameObject.SetActive(false);
+                    Instance.highscoreCanvas.gameObject.SetActive(true);
+                    Instance.menuCanvas.gameObject.SetActive(false);
                     break;
 
                 case (GameState.Ending):
+                    Instance.highscoreCanvasEndOfGame.gameObject.SetActive(true);
+                    break;
+
+                case (GameState.Quit):
                     Application.Quit();
 #if UNITY_EDITOR
                     EditorApplication.ExitPlaymode();
@@ -102,7 +109,7 @@ namespace AlienImmigration
             Instance = this;
             DontDestroyOnLoad(gameObject);
 
-            SwitchState(GameState.MainMenu);
+            Instance.SwitchState(GameState.MainMenu);
         }
 
         #endregion
