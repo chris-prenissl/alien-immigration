@@ -15,16 +15,29 @@ MonoBehaviour:
   picture:
   - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  names:
+  - Ignaqus Broqetta
+  - Diegorus Habellin
+  - Peroso Tranpod
+  - Zonta Loreza
+  - Paradisa Trizie
+  - Bellaxa Azucilyn
+  - Leitiqa Nzora
   occupation:
   - Wood worker
   - Aigent
   - Politics
-  homeplanet:
-  - Venus
-  - Mars
-  - Erde
-  - Sonne
+  canPassOccupation: []
+  canNotPassOccupation: []
+  homePlanet:
+  - 2M1207
+  - Gliese 1214
+  - HD 20782
+  - Ssc2005-10c
+  - Proxima Centauri
+  - Titawin
+  canPassPlanet: []
+  canNotPlanet: []
   species:
-  - Affe
-  - Ailen
+  - 
   age: 0
