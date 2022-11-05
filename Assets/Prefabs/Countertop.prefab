@@ -147,6 +147,7 @@ GameObject:
   - component: {fileID: 3227164490583065879}
   - component: {fileID: 3227164490583065896}
   - component: {fileID: 3227164490583065897}
+  - component: {fileID: 1781914617232045810}
   m_Layer: 5
   m_Name: Countertop
   m_TagString: Untagged
@@ -242,6 +243,24 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1781914617232045810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3227164490583065898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec9f982f722dfa64d9e8e0ccd03282bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ruleBookSmall: {fileID: 0}
+  ruleBookLarge: {fileID: 0}
+  alienIDSmall: {fileID: 0}
+  alienIDLarge: {fileID: 0}
+  acceptButton: {fileID: 0}
+  rejectButton: {fileID: 0}
 --- !u!1 &3227164491060791303
 GameObject:
   m_ObjectHideFlags: 0
@@ -1724,4 +1743,16 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3227164492608895445}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3227164490583065898}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
