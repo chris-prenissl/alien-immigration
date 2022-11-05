@@ -4,6 +4,7 @@ using UnityEditor;
 using UnityEngine;
 
 using UnityEditor.UI;
+using Booth.Timer;
 
 
 namespace AlienImmigration
@@ -74,9 +75,13 @@ namespace AlienImmigration
                     break;
 
                 case (GameState.NewAlien):
+                    Instance.GetComponent<TimerController>().ResetTimer();
+                    Instance.GetComponent<TimerController>().StartTimer();
+                    Instance.SwitchState(GameState.BoothTime);
                     break;
 
                 case (GameState.BoothTime):
+                    //at the moment empty state to "park" the game before getting a new alien
                     break;
 
                 case (GameState.Highscore):
@@ -110,6 +115,7 @@ namespace AlienImmigration
             DontDestroyOnLoad(gameObject);
 
             Instance.SwitchState(GameState.MainMenu);
+            Application.targetFrameRate = 60;
         }
 
         #endregion
