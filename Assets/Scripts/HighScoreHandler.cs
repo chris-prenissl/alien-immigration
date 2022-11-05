@@ -63,7 +63,6 @@ public class HighScoreHandler : MonoBehaviour
     #endregion
 
 
-
     #region IEnumerators
 
     public IEnumerator SubmitScoreRoutine(int scoreToUpload)
