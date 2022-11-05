@@ -9,7 +9,7 @@ public class AlienSetup : MonoBehaviour
 
     [Header("References")]
     public PossibleAlienPrpertys possibleAlienPrpertys;
-    public GameObject alienPrpertys;
+    //public AlienPropertys alienPrpertys;
 
     public Transform alienFolder;
 
@@ -22,6 +22,18 @@ public class AlienSetup : MonoBehaviour
 
     void CreateAlien(int amount)
     {
+        for (int i = 0; i < amount; i++)
+        {
+            AlienPropertys x = ScriptableObject.CreateInstance<AlienPropertys>();
+
+            x.picture = possibleAlienPrpertys.picture[Random.Range(0, possibleAlienPrpertys.picture.Count)];
+            x.occupation = possibleAlienPrpertys.occupation[Random.Range(0, possibleAlienPrpertys.occupation.Count)];
+            x.homeplanet = possibleAlienPrpertys.homeplanet[Random.Range(0, possibleAlienPrpertys.homeplanet.Count)];
+            x.species = possibleAlienPrpertys.species[Random.Range(0, possibleAlienPrpertys.species.Count)];
+            x.age = Random.Range(0, 99);
+        }
+
+        /*
         for (int i = 0; i < amount; i++)
         {
             GameObject x = Instantiate(alienPrpertys);
@@ -38,5 +50,6 @@ public class AlienSetup : MonoBehaviour
 
             alienManagerScript.aliensSpawned.Add(x);
         }
+        */
     }
 }

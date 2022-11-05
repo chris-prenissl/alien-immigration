@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+/*
 using UnityEngine.UI;
 using TMPro;
+*/
 
-public class AlienPropertys : MonoBehaviour
+[CreateAssetMenu(fileName = "PossibleAlienPrpertys")]
+public class AlienPropertys : ScriptableObject
 {
     public Sprite picture;
     public string occupation;
@@ -12,6 +15,7 @@ public class AlienPropertys : MonoBehaviour
     public string species;
     public int age;
 
+    /*
     [SerializeField] Image alienImage;
     [SerializeField] TMP_Text occupationText;
     [SerializeField] TMP_Text homePlanetText;
@@ -26,4 +30,5 @@ public class AlienPropertys : MonoBehaviour
         speciesText.text = species;
         ageText.text = age.ToString();
     }
+    */
 }
