@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 857147788}
   - component: {fileID: 857147789}
   - component: {fileID: 7506382462219682362}
+  - component: {fileID: 5237027531037378834}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -50,6 +51,7 @@ MonoBehaviour:
   menuCanvas: {fileID: 0}
   creditsCanvas: {fileID: 0}
   highscoreCanvas: {fileID: 0}
+  highscoreCanvasEndOfGame: {fileID: 0}
 --- !u!114 &857147788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96,3 +98,21 @@ MonoBehaviour:
   _lifeTwo: {fileID: 0}
   _lifeThree: {fileID: 0}
   _lifeFour: {fileID: 0}
+--- !u!114 &5237027531037378834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902432092933865931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec9f982f722dfa64d9e8e0ccd03282bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ruleBookSmall: {fileID: 0}
+  ruleBookLarge: {fileID: 0}
+  alienIDSmall: {fileID: 0}
+  alienIDLarge: {fileID: 0}
+  acceptButton: {fileID: 0}
+  rejectButton: {fileID: 0}
