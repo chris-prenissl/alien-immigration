@@ -28,6 +28,11 @@ namespace MainMenu
             GameManager.Instance.SwitchState(GameState.Credits);
         }
 
+        public void GoToMainMenu()
+        {
+            GameManager.Instance.SwitchState(GameState.MainMenu);
+        }
+
         #endregion
     }
 }

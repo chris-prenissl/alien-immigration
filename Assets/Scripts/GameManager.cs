@@ -79,6 +79,7 @@ namespace AlienImmigration
                     break;
 
                 case (GameState.Ending):
+                    Application.Quit();
                     break;
 
                 default:
