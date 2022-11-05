@@ -39,7 +39,52 @@ public class HighScoreHandler : MonoBehaviour
 
     #endregion
 
+    #region Public Functions
+
+    //function to set PlayerName for lootlocker
+    public void SetPlayerName()
+    {
+        LootLockerSDKManager.SetPlayerName(playerNameInputfield.text, (response) =>
+        {
+            if (response.success)
+            {
+                Debug.Log("Successfully set player name");
+                StartCoroutine(FetchTopHighscoresRoutine());
+            }
+            else
+            {
+                Debug.Log("Could not set player name");
+            }
+        });
+
+
+    }
+
+    #endregion
+
+
     #region IEnumerators
+
+    public IEnumerator SubmitScoreRoutine(int scoreToUpload)
+    {
+        bool done = false;
+        string playerID = PlayerPrefs.GetString("PlayerID");
+        LootLockerSDKManager.SubmitScore(playerID, scoreToUpload, leaderboardID, (response) =>
+        {
+            if (response.success)
+            {
+                Debug.Log("Successfully uploaded score");
+                done = true;
+            }
+            else
+            {
+                Debug.Log("Failed" + response.Error);
+                done = true;
+            }
+        });
+        yield return new WaitWhile(() => done == false);
+
+    }
 
     private IEnumerator LoginRoutine()
     {
