@@ -45,6 +45,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HighscoreCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4338036916915557497, guid: d3a500d78f5c6824cad9c5235db5f4c8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5103714881144053389, guid: d3a500d78f5c6824cad9c5235db5f4c8, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -143,6 +147,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8924673916223433370}
     m_Modifications:
+    - target: {fileID: 1680104486705907755, guid: 9928cf60c5f13fe4f8969ba39c75c8e6, type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1877470031874510432, guid: 9928cf60c5f13fe4f8969ba39c75c8e6, type: 3}
+      propertyPath: m_Maskable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1877470031874510432, guid: 9928cf60c5f13fe4f8969ba39c75c8e6, type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1877470031874510432, guid: 9928cf60c5f13fe4f8969ba39c75c8e6, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3227164490583065878, guid: 9928cf60c5f13fe4f8969ba39c75c8e6, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -227,9 +247,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3227164490583065879, guid: 9928cf60c5f13fe4f8969ba39c75c8e6, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3227164490583065898, guid: 9928cf60c5f13fe4f8969ba39c75c8e6, type: 3}
       propertyPath: m_Name
       value: Countertop
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227164492513337201, guid: 9928cf60c5f13fe4f8969ba39c75c8e6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990407509861741885, guid: 9928cf60c5f13fe4f8969ba39c75c8e6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7516295273186242762, guid: 9928cf60c5f13fe4f8969ba39c75c8e6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 38
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9928cf60c5f13fe4f8969ba39c75c8e6, type: 3}
