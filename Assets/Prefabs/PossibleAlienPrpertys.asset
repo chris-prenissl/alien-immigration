@@ -16,13 +16,20 @@ MonoBehaviour:
   - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
   names:
-  - Ignaqus Broqetta
-  - Diegorus Habellin
-  - Peroso Tranpod
-  - Zonta Loreza
-  - Paradisa Trizie
-  - Bellaxa Azucilyn
-  - Leitiqa Nzora
+  - Ignaqus
+  - Diegorus
+  - Peroso
+  - Zonta
+  - Paradisa
+  - Bellaxa
+  - Leitiqa
+  - Bellaxa
+  - Dulcitiyn
+  - Winsin
+  - Xoef
+  - Termonto
+  - Lothlynn
+  - Zolnar
   occupation:
   - Wood worker
   - Aigent
@@ -39,5 +46,9 @@ MonoBehaviour:
   canPassPlanet: []
   canNotPlanet: []
   species:
-  - 
-  age: 0
+  - Bhucander
+  - Huliaphan
+  - Drociamite
+  ageLengthBhucander: 102
+  ageLengthHuliaphan: 46
+  ageLengthDrociamite: 67

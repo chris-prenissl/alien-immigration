@@ -25,5 +25,7 @@ public class PossibleAlienPrpertys : ScriptableObject
     public List<string> species;
 
     [Header("Age")]
-    public int age;
+    public int ageLengthBhucander; 
+    public int ageLengthHuliaphan;
+    public int ageLengthDrociamite;
 }
