@@ -11,7 +11,7 @@ public class AlienPropertys : ScriptableObject
 {
     public Sprite picture;
     public string occupation;
-    public string homeplanet;
+    public string homePlanet;
     public string species;
     public int age;
 
