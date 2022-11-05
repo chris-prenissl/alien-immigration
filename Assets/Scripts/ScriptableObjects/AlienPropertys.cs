@@ -9,12 +9,24 @@ using TMPro;
 [CreateAssetMenu(fileName = "PossibleAlienPrpertys")]
 public class AlienPropertys : ScriptableObject
 {
+    [Header("Pictures")]
     public Sprite picture;
-    public string occupation;
-    public string homePlanet;
-    public string species;
-    public int age;
 
+    [Header("Occupation")]
+    public string occupation;
+
+    [Header("HomePlanet")]
+    public string homePlanet;
+
+    [Header("Species")]
+    public string species;
+
+    [Header("Age")]
+    public int age;
+    public string monthOfBirth;
+    public int yearOfBirth;
+
+    [Header("Can Pass")]
     private bool canPass;
     public bool CanPass
     {

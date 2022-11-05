@@ -11,6 +11,11 @@ public class AlienLanguages : ScriptableObject
     public List<string> namesDrociamite;
 
     [Header("Occupation")]
+    public List<string> occupationBhucander;
+    public List<string> occupationHuliaphan;
+    public List<string> occupationDrociamite;
+
+    [Header("HomePlanet")]
     public List<string> homePlanetBhucander;
     public List<string> homePlanetHuliaphan;
     public List<string> homePlanetDrociamite;

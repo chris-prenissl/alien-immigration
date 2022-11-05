@@ -16,33 +16,33 @@ MonoBehaviour:
   - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
   names:
-  - Ignaqus
-  - Diegorus
-  - Peroso
-  - Zonta
-  - Paradisa
-  - Bellaxa
-  - Leitiqa
-  - Bellaxa
-  - Dulcitiyn
-  - Winsin
-  - Xoef
-  - Termonto
-  - Lothlynn
-  - Zolnar
+  - ignaqus
+  - diegorus
+  - peroso
+  - zonta
+  - paradisa
+  - bellaxa
+  - leitiqa
+  - bellaxa
+  - dulcitiyn
+  - winsin
+  - xoef
+  - termonto
+  - lothlynn
+  - zolnar
   occupation:
-  - Wood worker
-  - Aigent
-  - Politics
+  - wood worker
+  - aigent
+  - politics
   canPassOccupation: []
   canNotPassOccupation: []
   homePlanet:
-  - 2M1207
-  - Gliese 1214
-  - HD 20782
-  - Ssc2005-10c
-  - Proxima Centauri
-  - Titawin
+  - 2m1207
+  - gliese 1214
+  - hd 20782
+  - ssc2005-10c
+  - proxima centauri
+  - titawin
   canPassPlanet: []
   canNotPlanet: []
   species:

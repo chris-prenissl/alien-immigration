@@ -13,12 +13,83 @@ MonoBehaviour:
   m_Name: AlienLanguagesTranslated
   m_EditorClassIdentifier: 
   namesBhucander:
-  - 
-  namesHuliaphan: []
-  namesDrociamite: []
-  homePlanetBhucander: []
-  homePlanetHuliaphan: []
-  homePlanetDrociamite: []
+  - 86E30E6T0E8
+  - 3846E4E7T0E8
+  - E54E7E4E8E4
+  - T5E4E3E90
+  - E50E7038E80
+  - 14E1E10T30
+  - E148E98E60
+  - 14E1E10T30
+  - 3T0E128E98T4E3
+  - T28E3E88E3
+  - T3E445
+  - E94E7E2E4E3E9E4
+  - E1E4E97E1T4E3E3
+  - T5E4E1E30E7
+  namesHuliaphan:
+  - 86E30E6T0E8
+  - 3846E4E7T0E8
+  - E54E7E4E8E4
+  - T5E4E3E90
+  - E50E7038E80
+  - 14E1E10T30
+  - E148E98E60
+  - 14E1E10T30
+  - 3T0E128E98T4E3
+  - T28E3E88E3
+  - T3E445
+  - E94E7E2E4E3E9E4
+  - E1E4E97E1T4E3E3
+  - T5E4E1E30E7
+  namesDrociamite:
+  - 86E30E6T0E8
+  - 3846E4E7T0E8
+  - E54E7E4E8E4
+  - T5E4E3E90
+  - E50E7038E80
+  - 14E1E10T30
+  - E148E98E60
+  - 14E1E10T30
+  - 3T0E128E98T4E3
+  - T28E3E88E3
+  - T3E445
+  - E94E7E2E4E3E9E4
+  - E1E4E97E1T4E3E3
+  - T5E4E1E30E7
+  occupationBhucander:
+  - T2E4E43T2E4E7E04E7
+  - 0864E3E9
+  - E5E4E18E982E8
+  occupationHuliaphan:
+  - T2E4E43T2E4E7E04E7
+  - 0864E3E9
+  - E5E4E18E982E8
+  occupationDrociamite:
+  - T2E4E43T2E4E7E04E7
+  - 0864E3E9
+  - E5E4E18E982E8
+  homePlanetBhucander:
+  - E2
+  - 6E184E84
+  - 73
+  - E8E822
+  - E5E7E4T38E2024E3E90T0E78
+  - E98E90T28E3
+  homePlanetHuliaphan:
+  - E2
+  - 6E184E84
+  - 73
+  - E8E822
+  - E5E7E4T38E2024E3E90T0E78
+  - E98E90T28E3
+  homePlanetDrociamite:
+  - E2
+  - 6E184E84
+  - 73
+  - E8E822
+  - E5E7E4T38E2024E3E90T0E78
+  - E98E90T28E3
   speciesBhucander: []
   speciesHuliaphan: []
   speciesDrociamite: []

@@ -252,7 +252,6 @@ GameObject:
   - component: {fileID: 364957657}
   - component: {fileID: 364957659}
   - component: {fileID: 364957658}
-  - component: {fileID: 364957660}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -282,7 +281,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 364957656}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 138e76d105c73a84caee4abe6b20a0a9, type: 3}
   m_Name: 
@@ -309,19 +308,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aliensSpawned: []
---- !u!114 &364957660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 364957656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d8556c1b241d4644bba4d7b46e5a722, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameToTranslate: Igor
 --- !u!1 &406583510
 GameObject:
   m_ObjectHideFlags: 0
