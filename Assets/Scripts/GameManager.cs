@@ -25,8 +25,8 @@ namespace AlienImmigration
         #region Fields
         public static GameManager Instance;
 
-        private Canvas menuCanvas;
-        private Canvas creditsCanvas;
+        [SerializeField] private Canvas menuCanvas;
+        [SerializeField] private Canvas creditsCanvas;
 
         #endregion
 
