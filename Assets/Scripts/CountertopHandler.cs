@@ -76,7 +76,8 @@ namespace Booth.Countertop
         {
             if (_accepted)
             {
-                //check here if alien war permissable
+                //ToDo Request canPass
+                //ToDo correctChoice -assign highscore increase
                 if(!_correctChoice)
                 {
                     LifeHandler _lifeHandler = GameManager.Instance.GetComponent<LifeHandler>();
@@ -85,8 +86,9 @@ namespace Booth.Countertop
             }
             else if (_rejected)
             {
-                //check here if alien was supposed to be rejected
-                if(!_correctChoice)
+                //ToDo Request canPass
+                //ToDo correctChoice -assign highscore increase
+                if (!_correctChoice)
                 {
                     LifeHandler _lifeHandler = GameManager.Instance.GetComponent<LifeHandler>();
                     _lifeHandler.LostLife();

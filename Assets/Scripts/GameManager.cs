@@ -72,15 +72,18 @@ namespace AlienImmigration
 
                 case (GameState.Starting):
                     Instance.menuCanvas.gameObject.SetActive(false);
+                    //ToDo Initialisation of the Gameplay
+                    Instance.SwitchState(GameState.NewAlien);
                     break;
 
-                case (GameState.NewAlien):
-                    Instance.GetComponent<TimerController>().ResetTimer();
-                    Instance.GetComponent<TimerController>().StartTimer();
+                case (GameState.NewAlien):                   
+                    Instance.GetComponent<AlienSetup>().CreateAlien(1);
                     Instance.SwitchState(GameState.BoothTime);
                     break;
 
                 case (GameState.BoothTime):
+                    Instance.GetComponent<TimerController>().ResetTimer();
+                    Instance.GetComponent<TimerController>().StartTimer();
                     //at the moment empty state to "park" the game before getting a new alien
                     break;
 
