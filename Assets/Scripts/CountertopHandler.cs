@@ -1,7 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using AlienImmigration;
+using AlienImmigration.LifeCounter;
 
 namespace Booth.Countertop
 {
@@ -15,6 +18,10 @@ namespace Booth.Countertop
         [SerializeField] private Button alienIDLarge;
         [SerializeField] private Button acceptButton;
         [SerializeField] private Button rejectButton;
+
+        private bool _rejected;
+        private bool _accepted;
+        private bool _correctChoice;
 
         #endregion
 
@@ -52,18 +59,47 @@ namespace Booth.Countertop
 
         public void AcceptAlien()
         {
-
+            _accepted = true;
+            CheckForCorrectChoice();
         }
 
         public void RejectAlien()
         {
-
+            _rejected = true;
+            CheckForCorrectChoice();
         }
         #endregion
 
         #region Private Functions
 
+        private void CheckForCorrectChoice()
+        {
+            if (_accepted)
+            {
+                //check here if alien war permissable
+                if(!_correctChoice)
+                {
+                    LifeHandler _lifeHandler = GameManager.Instance.GetComponent<LifeHandler>();
+                    _lifeHandler.LostLife();
+                }
+            }
+            else if (_rejected)
+            {
+                //check here if alien was supposed to be rejected
+                if(!_correctChoice)
+                {
+                    LifeHandler _lifeHandler = GameManager.Instance.GetComponent<LifeHandler>();
+                    _lifeHandler.LostLife();
+                }
+            }
+            else
+            {
+                Debug.Log("Unextpected Button Behaviour!");
+            }
 
+            _accepted = false;
+            _rejected = false;
+        }
 
         #endregion
     }

@@ -352,6 +352,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &838571464 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 838571464, guid: 9928cf60c5f13fe4f8969ba39c75c8e6, type: 3}
+  m_PrefabInstance: {fileID: 3227164492224867127}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &857147785
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -367,6 +378,10 @@ PrefabInstance:
       propertyPath: creditsCanvas
       value: 
       objectReference: {fileID: 398529285093201410}
+    - target: {fileID: 857147787, guid: d862319effd693b4ab0f45237afb36c9, type: 3}
+      propertyPath: highscoreCanvas
+      value: 
+      objectReference: {fileID: 398529285093201413}
     - target: {fileID: 902432092933865931, guid: d862319effd693b4ab0f45237afb36c9, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -415,6 +430,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7506382462219682362, guid: d862319effd693b4ab0f45237afb36c9, type: 3}
+      propertyPath: _lifeOne
+      value: 
+      objectReference: {fileID: 838571464}
+    - target: {fileID: 7506382462219682362, guid: d862319effd693b4ab0f45237afb36c9, type: 3}
+      propertyPath: _lifeTwo
+      value: 
+      objectReference: {fileID: 3227164492224867131}
+    - target: {fileID: 7506382462219682362, guid: d862319effd693b4ab0f45237afb36c9, type: 3}
+      propertyPath: _lifeFour
+      value: 
+      objectReference: {fileID: 3227164492224867130}
+    - target: {fileID: 7506382462219682362, guid: d862319effd693b4ab0f45237afb36c9, type: 3}
+      propertyPath: _lifeThree
+      value: 
+      objectReference: {fileID: 3227164492224867129}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d862319effd693b4ab0f45237afb36c9, type: 3}
 --- !u!114 &857147788 stripped
@@ -617,6 +648,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8048525665321226825, guid: 6cd050798a4a5db40a1bfae154bcd056, type: 3}
   m_PrefabInstance: {fileID: 398529285093201409}
   m_PrefabAsset: {fileID: 0}
+--- !u!223 &398529285093201413 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 604899886, guid: 6cd050798a4a5db40a1bfae154bcd056, type: 3}
+  m_PrefabInstance: {fileID: 398529285093201409}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3227164492224867127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -719,3 +755,36 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3227164490583065878, guid: 9928cf60c5f13fe4f8969ba39c75c8e6, type: 3}
   m_PrefabInstance: {fileID: 3227164492224867127}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3227164492224867129 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2963153187674939792, guid: 9928cf60c5f13fe4f8969ba39c75c8e6, type: 3}
+  m_PrefabInstance: {fileID: 3227164492224867127}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3227164492224867130 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5628728204933201672, guid: 9928cf60c5f13fe4f8969ba39c75c8e6, type: 3}
+  m_PrefabInstance: {fileID: 3227164492224867127}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3227164492224867131 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5262548086116442442, guid: 9928cf60c5f13fe4f8969ba39c75c8e6, type: 3}
+  m_PrefabInstance: {fileID: 3227164492224867127}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
