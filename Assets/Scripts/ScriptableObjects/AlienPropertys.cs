@@ -15,6 +15,14 @@ public class AlienPropertys : ScriptableObject
     public string species;
     public int age;
 
+    private bool canPass;
+    public bool CanPass
+    {
+        get { return canPass; }
+        set { canPass = value; }
+    }
+    
+
     /*
     [SerializeField] Image alienImage;
     [SerializeField] TMP_Text occupationText;
