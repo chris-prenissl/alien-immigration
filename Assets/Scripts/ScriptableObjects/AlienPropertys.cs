@@ -12,6 +12,9 @@ public class AlienPropertys : ScriptableObject
     [Header("Pictures")]
     public Sprite picture;
 
+    [Header("Name")]
+    public string alienName;
+
     [Header("Occupation")]
     public string occupation;
 
@@ -27,28 +30,5 @@ public class AlienPropertys : ScriptableObject
     public int yearOfBirth;
 
     [Header("Can Pass")]
-    private bool canPass;
-    public bool CanPass
-    {
-        get { return canPass; }
-        set { canPass = value; }
-    }
-    
-
-    /*
-    [SerializeField] Image alienImage;
-    [SerializeField] TMP_Text occupationText;
-    [SerializeField] TMP_Text homePlanetText;
-    [SerializeField] TMP_Text speciesText;
-    [SerializeField] TMP_Text ageText;
-
-    public void Setup()
-    {
-        alienImage.sprite = picture;
-        occupationText.text = occupation;
-        homePlanetText.text = homeplanet;
-        speciesText.text = species;
-        ageText.text = age.ToString();
-    }
-    */
+    public bool canPass;
 }

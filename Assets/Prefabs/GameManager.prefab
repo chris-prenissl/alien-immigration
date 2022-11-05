@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 857147789}
   - component: {fileID: 7506382462219682362}
   - component: {fileID: 5237027531037378834}
+  - component: {fileID: 8359090294974487598}
+  - component: {fileID: 989599981019596375}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -116,3 +118,37 @@ MonoBehaviour:
   alienIDLarge: {fileID: 0}
   acceptButton: {fileID: 0}
   rejectButton: {fileID: 0}
+--- !u!114 &8359090294974487598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902432092933865931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 138e76d105c73a84caee4abe6b20a0a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnAmount: 1
+  possibleAlienPrpertys: {fileID: 11400000, guid: 783115d96c3bc68479232c35b645e964, type: 2}
+  alienFolder: {fileID: 0}
+  alienManagerScript: {fileID: 989599981019596375}
+  alienImage: {fileID: 0}
+  occupationText: {fileID: 0}
+  homePlanetText: {fileID: 0}
+  speciesText: {fileID: 0}
+  ageText: {fileID: 0}
+--- !u!114 &989599981019596375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902432092933865931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e264a36caac556649a78aa6273b94f80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aliensSpawned: []

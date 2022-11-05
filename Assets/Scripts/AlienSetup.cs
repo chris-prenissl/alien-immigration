@@ -13,12 +13,11 @@ public class AlienSetup : MonoBehaviour
     public PossibleAlienPrpertys possibleAlienPrpertys;
     //public AlienPropertys alienPrpertys;
 
-    public Transform alienFolder;
-
     [SerializeField] AlienManager alienManagerScript;
 
     [Header("References to text for alien")]
     public Image alienImage;
+    public TMP_Text nameText;
     public TMP_Text occupationText;
     public TMP_Text homePlanetText;
     public TMP_Text speciesText;
@@ -27,6 +26,7 @@ public class AlienSetup : MonoBehaviour
     void Start()
     {
         CreateAlien(spawnAmount);
+        Debug.Log("Work!!!!");
     }
 
     public void CreateAlien(int amount)
@@ -38,10 +38,32 @@ public class AlienSetup : MonoBehaviour
                 AlienPropertys x = ScriptableObject.CreateInstance<AlienPropertys>();
 
                 x.picture = possibleAlienPrpertys.picture[Random.Range(0, possibleAlienPrpertys.picture.Count)];
+                x.alienName = possibleAlienPrpertys.names[Random.Range(0, possibleAlienPrpertys.names.Count)];
                 x.occupation = possibleAlienPrpertys.occupation[Random.Range(0, possibleAlienPrpertys.occupation.Count)];
                 x.homePlanet = possibleAlienPrpertys.homePlanet[Random.Range(0, possibleAlienPrpertys.homePlanet.Count)];
                 x.species = possibleAlienPrpertys.species[Random.Range(0, possibleAlienPrpertys.species.Count)];
-                x.age = Random.Range(0, AgeStuff(RandomizeSpecies()));
+                x.age = Random.Range(0, AgeStuff(RandomizeSpecies(), true));
+                x.canPass = true;
+
+                alienManagerScript.aliensSpawned.Add(x);
+
+                alienImage.sprite = x.picture;
+                occupationText.text = x.occupation;
+                homePlanetText.text = x.homePlanet;
+                speciesText.text = x.species;
+                ageText.text = x.age.ToString();
+            }
+            else
+            {
+                AlienPropertys x = ScriptableObject.CreateInstance<AlienPropertys>();
+
+                x.picture = possibleAlienPrpertys.picture[Random.Range(0, possibleAlienPrpertys.picture.Count)];
+                x.alienName = possibleAlienPrpertys.names[Random.Range(0, possibleAlienPrpertys.names.Count)];
+                x.occupation = possibleAlienPrpertys.occupation[Random.Range(0, possibleAlienPrpertys.occupation.Count)];
+                x.homePlanet = possibleAlienPrpertys.homePlanet[Random.Range(0, possibleAlienPrpertys.homePlanet.Count)];
+                x.species = possibleAlienPrpertys.species[Random.Range(0, possibleAlienPrpertys.species.Count)];
+                x.age = Random.Range(0, AgeStuff(RandomizeSpecies(), true));
+                x.canPass = true;
 
                 alienManagerScript.aliensSpawned.Add(x);
 
@@ -54,21 +76,41 @@ public class AlienSetup : MonoBehaviour
         }
     }
 
-    int AgeStuff(int speciesNumber)
+    int AgeStuff(int speciesNumber, bool canPass)
     {
-        int x = Random.Range(0, 3);
+        if(canPass)
+        {
+            int x = Random.Range(0, 3);
 
-        if(x == 1)
-        {
-            return Random.Range(18, possibleAlienPrpertys.ageLengthBhucander);
-        }
-        else if(x == 2)
-        {
-            return Random.Range(18, possibleAlienPrpertys.ageLengthHuliaphan);
+            if(x == 1)
+            {
+                return Random.Range(18, possibleAlienPrpertys.ageLengthBhucander);
+            }
+            else if(x == 2)
+            {
+                return Random.Range(18, possibleAlienPrpertys.ageLengthHuliaphan);
+            }
+            else
+            {
+                return Random.Range(18, possibleAlienPrpertys.ageLengthDrociamite);
+            }
         }
         else
         {
-            return Random.Range(18, possibleAlienPrpertys.ageLengthDrociamite);
+            int x = Random.Range(0, 3);
+
+            if(x == 1)
+            {
+                return Random.Range(0, possibleAlienPrpertys.ageLengthBhucander + 150);
+            }
+            else if(x == 2)
+            {
+                return Random.Range(18, possibleAlienPrpertys.ageLengthHuliaphan + 100);
+            }
+            else
+            {
+                return Random.Range(18, possibleAlienPrpertys.ageLengthDrociamite + 150);
+            }
         }
     }
 
