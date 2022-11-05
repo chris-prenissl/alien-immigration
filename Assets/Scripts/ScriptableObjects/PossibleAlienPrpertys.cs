@@ -7,6 +7,7 @@ public class PossibleAlienPrpertys : ScriptableObject
 {
     public List<Sprite> picture;
 
+    public List<string> names;
     public List<string> occupation;
     public List<string> homePlanet;
     public List<string> species;
