@@ -255,12 +255,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec9f982f722dfa64d9e8e0ccd03282bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ruleBookSmall: {fileID: 0}
-  ruleBookLarge: {fileID: 0}
-  alienIDSmall: {fileID: 0}
-  alienIDLarge: {fileID: 0}
-  acceptButton: {fileID: 0}
-  rejectButton: {fileID: 0}
+  ruleBookSmall: {fileID: 3227164492608895446}
+  ruleBookLarge: {fileID: 3227164492029697675}
+  alienIDSmall: {fileID: 3227164491060791301}
+  alienIDLarge: {fileID: 3227164492513337215}
+  acceptButton: {fileID: 3227164492168240891}
+  rejectButton: {fileID: 3227164491593781667}
 --- !u!1 &3227164491060791303
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,7 +382,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3227164491060791300}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1781914617232045810}
+        m_TargetAssemblyTypeName: Booth.Countertop.CountertopHandler, Assembly-CSharp
+        m_MethodName: ZoomAlienID
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3227164491510664507
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,7 +786,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3227164491593781666}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1781914617232045810}
+        m_TargetAssemblyTypeName: Booth.Countertop.CountertopHandler, Assembly-CSharp
+        m_MethodName: RejectAlien
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3227164491750233667
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,7 +1028,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3227164492029697676
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1107,7 +1131,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3227164492029697674}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1781914617232045810}
+        m_TargetAssemblyTypeName: Booth.Countertop.CountertopHandler, Assembly-CSharp
+        m_MethodName: CloseLargeRuleBook
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3227164492104561164
 GameObject:
   m_ObjectHideFlags: 0
@@ -1499,7 +1535,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3227164492168240890}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1781914617232045810}
+        m_TargetAssemblyTypeName: Booth.Countertop.CountertopHandler, Assembly-CSharp
+        m_MethodName: AcceptAlien
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3227164492513337201
 GameObject:
   m_ObjectHideFlags: 0
@@ -1518,7 +1566,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3227164492513337200
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1621,7 +1669,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3227164492513337214}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1781914617232045810}
+        m_TargetAssemblyTypeName: Booth.Countertop.CountertopHandler, Assembly-CSharp
+        m_MethodName: CloseLargeAlienID
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3227164492608895464
 GameObject:
   m_ObjectHideFlags: 0
@@ -1744,13 +1804,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3227164490583065898}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1781914617232045810}
+        m_TargetAssemblyTypeName: Booth.Countertop.CountertopHandler, Assembly-CSharp
+        m_MethodName: ZoomRuleBook
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
