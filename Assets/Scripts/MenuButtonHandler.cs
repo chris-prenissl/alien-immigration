@@ -33,6 +33,11 @@ namespace MainMenu
             GameManager.Instance.SwitchState(GameState.MainMenu);
         }
 
+        public void GoToHighscores()
+        {
+            GameManager.Instance.SwitchState(GameState.Highscore);
+        }
+
         #endregion
     }
 }

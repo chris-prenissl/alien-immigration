@@ -27,6 +27,7 @@ namespace AlienImmigration
 
         [SerializeField] private Canvas menuCanvas;
         [SerializeField] private Canvas creditsCanvas;
+        [SerializeField] private Canvas highscoreCanvas;
 
         #endregion
 
@@ -76,10 +77,15 @@ namespace AlienImmigration
                     break;
 
                 case (GameState.Highscore):
+                    highscoreCanvas.gameObject.SetActive(true);
+                    menuCanvas.gameObject.SetActive(false);
                     break;
 
                 case (GameState.Ending):
                     Application.Quit();
+#if UNITY_EDITOR
+                    EditorApplication.ExitPlaymode();
+#endif
                     break;
 
                 default:
