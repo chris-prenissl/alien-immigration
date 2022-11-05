@@ -9,10 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4643923120599195589}
-  - component: {fileID: 5484760424801306088}
-  - component: {fileID: 6071636780031800201}
   - component: {fileID: 857147787}
   - component: {fileID: 857147788}
+  - component: {fileID: 857147789}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -35,33 +34,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5484760424801306088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 902432092933865931}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc3a1d0138dd37b49b6e1de215f7651d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menuCanvas: {fileID: 0}
-  creditsCanvas: {fileID: 0}
-  highscoreCanvas: {fileID: 0}
---- !u!114 &6071636780031800201
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 902432092933865931}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c833d0fe6da85ba499c72409e0de7f6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &857147787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,3 +61,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c833d0fe6da85ba499c72409e0de7f6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &857147789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902432092933865931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc296a7de328903448bb196ef5834e2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerNamesMainMenu: {fileID: 0}
+  playerScoresMainMenu: {fileID: 0}
+  playerNamesEndOfGame: {fileID: 0}
+  playerScoresEndOfGame: {fileID: 0}
+  currentPlayerScore: {fileID: 0}
+  playerNameInputfield: {fileID: 0}
