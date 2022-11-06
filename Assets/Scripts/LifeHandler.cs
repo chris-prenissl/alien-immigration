@@ -43,19 +43,19 @@ namespace AlienImmigration.LifeCounter
                     break;
 
                 case (3):
-                    _lifeFour.transition.Equals(true);
+                    _lifeFour.gameObject.SetActive(false);
                     break;
 
                 case (2):
-                    _lifeThree.transition.Equals(true);
+                    _lifeThree.gameObject.SetActive(false);
                     break;
 
                 case (1):
-                    _lifeTwo.transition.Equals(true);
+                    _lifeTwo.gameObject.SetActive(false);
                     break;
 
                     case (0):
-                    _lifeOne.transition.Equals(true);
+                    _lifeOne.gameObject.SetActive(false);
                     GameManager.Instance.SwitchState(GameState.Ending);
                     break;
 
