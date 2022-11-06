@@ -740,6 +740,10 @@ PrefabInstance:
       propertyPath: rulesBookOpeningInfoButton
       value: 
       objectReference: {fileID: 1649110745}
+    - target: {fileID: 5783819791827072178, guid: d862319effd693b4ab0f45237afb36c9, type: 3}
+      propertyPath: playerNote
+      value: 
+      objectReference: {fileID: 926877473}
     - target: {fileID: 7506382462219682362, guid: d862319effd693b4ab0f45237afb36c9, type: 3}
       propertyPath: _lifeOne
       value: 
@@ -802,6 +806,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bc296a7de328903448bb196ef5834e2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &926877473 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7180718643036163647, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+  m_PrefabInstance: {fileID: 8924673915119394480}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1113706778 stripped
@@ -1191,7 +1206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 848246645319259317, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1128644366780183594, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
