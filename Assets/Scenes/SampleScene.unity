@@ -139,6 +139,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &60276728 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2477793450333195999, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+  m_PrefabInstance: {fileID: 8924673915119394480}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &416352412 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9082848652725949463, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
@@ -450,17 +455,6 @@ Canvas:
   m_CorrespondingSourceObject: {fileID: 7307194852501197181, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
   m_PrefabInstance: {fileID: 8924673915119394480}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &846533377 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8924673915727178508, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
-  m_PrefabInstance: {fileID: 8924673915119394480}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &857147785
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -591,7 +585,7 @@ PrefabInstance:
     - target: {fileID: 5237027531037378834, guid: d862319effd693b4ab0f45237afb36c9, type: 3}
       propertyPath: ruleBookLarge
       value: 
-      objectReference: {fileID: 846533377}
+      objectReference: {fileID: 60276728}
     - target: {fileID: 5237027531037378834, guid: d862319effd693b4ab0f45237afb36c9, type: 3}
       propertyPath: ruleBookSmall
       value: 
@@ -933,6 +927,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 857147788}
+    - target: {fileID: 2477793450333195999, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5015373247816197896, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1

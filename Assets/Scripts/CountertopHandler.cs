@@ -19,7 +19,7 @@ namespace Booth.Countertop
 
         [Header("Rule book")]
         [SerializeField] private Button ruleBookSmall;
-        [SerializeField] private Button ruleBookLarge;
+        [SerializeField] private GameObject ruleBookLarge;
         [SerializeField] private Image ruleBookBackImage;
 
         [SerializeField] private Sprite rulesBookRulesTab;
