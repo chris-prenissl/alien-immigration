@@ -1090,6 +1090,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3603945710476723522, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4497767645015294651, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
       propertyPath: m_text
       value: Species
