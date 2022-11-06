@@ -9,7 +9,20 @@ public class PlayerNoteHandler : MonoBehaviour
 {
     #region Fields
 
-    [SerializeField] private Button playerNote;
+    [SerializeField] private Image playerNote;
+
+    #endregion
+
+    #region Properties
+
+    private bool newGame = true;
+
+    public bool NewGame
+    {
+        get { return newGame; }
+        set { newGame = value; }
+    }
+
 
     #endregion
 
@@ -23,10 +36,11 @@ public class PlayerNoteHandler : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && newGame && GameManager.Instance.GameState == GameState.Starting)
         {
             DisablePlayerNote();
             GameManager.Instance.SwitchState(GameState.NewAlien);
+            newGame = false;
         }
     }
 

@@ -61,6 +61,7 @@ namespace AlienImmigration
             switch (state)
             {
                 case (GameState.MainMenu):
+                    gameState = GameState.MainMenu;
                     StartCoroutine(Instance.GetComponent<AudioManager>().PlayMenuMusic());
                     Instance.menuCanvas.gameObject.SetActive(true);
                     Instance.creditsCanvas.gameObject.SetActive(false);
@@ -69,43 +70,52 @@ namespace AlienImmigration
                     break;
 
                 case (GameState.Credits):
+                    gameState = GameState.Credits;
                     Instance.menuCanvas.gameObject.SetActive(false);
                     Instance.creditsCanvas.gameObject.SetActive(true);
                     break;
 
                 case (GameState.Starting):
+                    gameState = GameState.Starting;
                     Instance.menuCanvas.gameObject.SetActive(false);
                     StartCoroutine(Instance.GetComponent<AudioManager>().PlayBoothMusic());                    
                     break;
 
-                case (GameState.NewAlien):                   
+                case (GameState.NewAlien):  
+                    gameState = GameState.NewAlien;
                     Instance.GetComponent<AlienSetup>().CreateAlien(1);
                     Instance.SwitchState(GameState.BoothTime);
                     break;
 
                 case (GameState.BoothTime):
+                    gameState = GameState.BoothTime;
                     Instance.GetComponent<TimerController>().ResetTimer();
                     Instance.GetComponent<TimerController>().StartTimer();
                     break;
 
                 case (GameState.Highscore):
+                    gameState = GameState.Highscore;
                     Instance.highscoreCanvas.gameObject.SetActive(true);
                     Instance.menuCanvas.gameObject.SetActive(false);
                     break;
 
                 case (GameState.Ending):
+                    gameState = GameState.Ending;
                     int finalScore = Instance.GetComponent<HighScoreHandler>().Score;
                     StartCoroutine(Instance.GetComponent<HighScoreHandler>().SubmitScoreRoutine(finalScore));
                     Instance.highscoreCanvasEndOfGame.gameObject.SetActive(true);
                     break;
 
                 case (GameState.GameReset):
+                    gameState = GameState.GameReset;
                     Instance.GetComponent<HighScoreHandler>().Score = 0;
                     Instance.GetComponent<LifeHandler>().Lives = 4;
+                    Instance.GetComponent<PlayerNoteHandler>().NewGame = true;
                     Instance.SwitchState(GameState.MainMenu);
                     break;
 
                 case (GameState.Quit):
+                    gameState = GameState.Quit;
                     Application.Quit();
 #if UNITY_EDITOR
                     EditorApplication.ExitPlaymode();
