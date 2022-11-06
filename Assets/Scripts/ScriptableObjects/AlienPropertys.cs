@@ -25,9 +25,7 @@ public class AlienPropertys : ScriptableObject
     public string species;
 
     [Header("Age")]
-    public int age;
-    public string monthOfBirth;
-    public int yearOfBirth;
+    public string fullAge;
 
     [Header("Can Pass")]
     public bool canPass;
