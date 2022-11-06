@@ -1067,6 +1067,10 @@ PrefabInstance:
       propertyPath: occupationText
       value: 
       objectReference: {fileID: 604889224}
+    - target: {fileID: 8359090294974487598, guid: d862319effd693b4ab0f45237afb36c9, type: 3}
+      propertyPath: translatorScript
+      value: 
+      objectReference: {fileID: 1113706779}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d862319effd693b4ab0f45237afb36c9, type: 3}
 --- !u!114 &857147788 stripped
@@ -1119,6 +1123,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec9f982f722dfa64d9e8e0ccd03282bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1113706779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1113706774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d8556c1b241d4644bba4d7b46e5a722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1120420428 stripped
