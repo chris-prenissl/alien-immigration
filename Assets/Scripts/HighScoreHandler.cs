@@ -12,8 +12,8 @@ public class HighScoreHandler : MonoBehaviour
 
     public Leaderboard leaderboard;
 
-    //ID for lootlocker leaderboard stage - 8456, live - not set yet
-    private int leaderboardID = 8456;
+    //ID for lootlocker leaderboard - 8481
+    private int leaderboardID = 8485;
 
     //show Highscores in MainMenuHUD
     public TextMeshProUGUI playerNamesMainMenu;
