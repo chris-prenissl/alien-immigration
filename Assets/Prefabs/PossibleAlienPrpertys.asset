@@ -41,10 +41,14 @@ MonoBehaviour:
   - aigent
   - politics
   canPassOccupation:
-  - wood worker
-  - politics
+  - factory worker
+  - politician
+  - agent
+  - plant mechanic
+  - car salesman
+  - optometrist
   canNotPassOccupation:
-  - aigent
+  - caregiver
   homePlanet:
   - 2m1207
   - gliese 1214
