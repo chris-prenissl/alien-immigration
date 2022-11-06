@@ -628,6 +628,10 @@ PrefabInstance:
       propertyPath: timer
       value: 
       objectReference: {fileID: 1661272847}
+    - target: {fileID: 1113706775, guid: d862319effd693b4ab0f45237afb36c9, type: 3}
+      propertyPath: timerSeconds
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 902432092933865931, guid: d862319effd693b4ab0f45237afb36c9, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -1187,7 +1191,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 848246645319259317, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1128644366780183594, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
