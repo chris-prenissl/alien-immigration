@@ -628,6 +628,10 @@ PrefabInstance:
       propertyPath: timer
       value: 
       objectReference: {fileID: 1661272847}
+    - target: {fileID: 1113706775, guid: d862319effd693b4ab0f45237afb36c9, type: 3}
+      propertyPath: timerSeconds
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 902432092933865931, guid: d862319effd693b4ab0f45237afb36c9, type: 3}
       propertyPath: m_Name
       value: GameManager
