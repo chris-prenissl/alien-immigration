@@ -26,6 +26,8 @@ namespace Booth.Countertop
         [SerializeField] private Sprite rulesBookDrociamiteTab;
         [SerializeField] private Sprite rulesBookBhucanderTab;
         [SerializeField] private Sprite rulesBookHuliphanTab;
+        [SerializeField] private GameObject rulesBookOpeningInfoButton;
+
 
 
         private bool _rejected;
@@ -73,29 +75,39 @@ namespace Booth.Countertop
         public void ZoomRuleBook()
         {
             ruleBookSmall.interactable = false;
-            ruleBookLarge.gameObject.SetActive(true);
+            ruleBookLarge.SetActive(true);
+            rulesBookOpeningInfoButton.SetActive(false);
             ruleBookBackImage.sprite = rulesBookRulesTab;
         }
 
         public void CloseLargeRuleBook()
         {
             ruleBookSmall.interactable = true;
-            ruleBookLarge.gameObject.SetActive(false);
+            ruleBookLarge.SetActive(false);
         }
 
         public void OpenDrociamiteTab()
         {
             ruleBookBackImage.sprite = rulesBookDrociamiteTab;
+            rulesBookOpeningInfoButton.SetActive(true);
         }
 
         public void OpenBhucandereTab()
         {
             ruleBookBackImage.sprite = rulesBookBhucanderTab;
+            rulesBookOpeningInfoButton.SetActive(true);
         }
 
         public void OpenHuliapianTab()
         {
             ruleBookBackImage.sprite = rulesBookHuliphanTab;
+            rulesBookOpeningInfoButton.SetActive(true);
+        }
+
+        public void OpenRules()
+        {
+            ruleBookBackImage.sprite = rulesBookRulesTab;
+            rulesBookOpeningInfoButton.SetActive(false);
         }
 
         #endregion
