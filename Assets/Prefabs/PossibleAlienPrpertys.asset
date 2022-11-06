@@ -13,8 +13,16 @@ MonoBehaviour:
   m_Name: PossibleAlienPrpertys
   m_EditorClassIdentifier: 
   picture:
-  - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 21300000, guid: f0057088832cc41c79b564328c91f591, type: 3}
+  - {fileID: 21300000, guid: 2735d3ea2b1b04c0486fb289883a22f1, type: 3}
+  - {fileID: 21300000, guid: 6c02e907a9bb94edf963b48e320d300c, type: 3}
+  - {fileID: 21300000, guid: 97f75bc6cd3f34c1da337c7d59738a0b, type: 3}
+  - {fileID: 21300000, guid: fa0ade82299de43028eeb90cc6df98ce, type: 3}
+  - {fileID: 21300000, guid: 9af519d091f564650bf2c2c79a1c7028, type: 3}
+  - {fileID: 21300000, guid: 0fabc0d1eff6c4b939bd75880bf2b581, type: 3}
+  - {fileID: 21300000, guid: bddaed91bb7a64653a82dffc293869b5, type: 3}
+  - {fileID: 21300000, guid: 3e0d0367850a9453b9c19337a53da568, type: 3}
+  - {fileID: 21300000, guid: 103e62408a36241bf87e58530c821252, type: 3}
   names:
   - ignaqus
   - diegorus
