@@ -596,6 +596,26 @@ PrefabInstance:
       propertyPath: ruleBookSmall
       value: 
       objectReference: {fileID: 1846389808}
+    - target: {fileID: 5237027531037378834, guid: d862319effd693b4ab0f45237afb36c9, type: 3}
+      propertyPath: ruleBookBackImage
+      value: 
+      objectReference: {fileID: 8924673915119394485}
+    - target: {fileID: 5237027531037378834, guid: d862319effd693b4ab0f45237afb36c9, type: 3}
+      propertyPath: rulesBookRulesTab
+      value: 
+      objectReference: {fileID: 21300000, guid: a71dd9bf0f7ee5047b2ad83267904649, type: 3}
+    - target: {fileID: 5237027531037378834, guid: d862319effd693b4ab0f45237afb36c9, type: 3}
+      propertyPath: rulesBookHuliphanTab
+      value: 
+      objectReference: {fileID: 21300000, guid: 72a9cc0d4b51b1f4099953c92a0b8459, type: 3}
+    - target: {fileID: 5237027531037378834, guid: d862319effd693b4ab0f45237afb36c9, type: 3}
+      propertyPath: rulesBookBhucanderTab
+      value: 
+      objectReference: {fileID: 21300000, guid: 02102624aa27b5241af64d5be2274115, type: 3}
+    - target: {fileID: 5237027531037378834, guid: d862319effd693b4ab0f45237afb36c9, type: 3}
+      propertyPath: rulesBookDrociamiteTab
+      value: 
+      objectReference: {fileID: 21300000, guid: 3a9f0629bf8415347898fb0ee782c8ab, type: 3}
     - target: {fileID: 7506382462219682362, guid: d862319effd693b4ab0f45237afb36c9, type: 3}
       propertyPath: _lifeOne
       value: 
@@ -903,16 +923,132 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 586043925242941685, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 848246645319259317, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1128644366780183594, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 857147788}
+    - target: {fileID: 5015373247816197896, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015373247816197896, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015373247816197896, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1113706778}
+    - target: {fileID: 5015373247816197896, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015373247816197896, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenBhucandereTab
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015373247816197896, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Booth.Countertop.CountertopHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015373247816197896, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5240402729853744520, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5240402729853744520, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5240402729853744520, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1113706778}
+    - target: {fileID: 5240402729853744520, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5240402729853744520, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenHuliapianTab
+      objectReference: {fileID: 0}
+    - target: {fileID: 5240402729853744520, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Booth.Countertop.CountertopHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5240402729853744520, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7182834065272242358, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7182834065272242358, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7182834065272242358, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1113706778}
+    - target: {fileID: 7182834065272242358, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7182834065272242358, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenDrociamiteTab
+      objectReference: {fileID: 0}
+    - target: {fileID: 7182834065272242358, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Booth.Countertop.CountertopHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7182834065272242358, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7711128335382242719, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 857147788}
+    - target: {fileID: 8883851760335722955, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8883851760335722955, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8883851760335722955, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1113706778}
+    - target: {fileID: 8883851760335722955, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8883851760335722955, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CloseLargeRuleBook
+      objectReference: {fileID: 0}
+    - target: {fileID: 8883851760335722955, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Booth.Countertop.CountertopHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8883851760335722955, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8924673915058580348, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -1125,5 +1261,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8924673915119394485 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8924673915727178509, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+  m_PrefabInstance: {fileID: 8924673915119394480}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
