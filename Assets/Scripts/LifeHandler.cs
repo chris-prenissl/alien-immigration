@@ -25,7 +25,7 @@ namespace AlienImmigration.LifeCounter
         public int Lives
         {
             get { return _lives; }
-            private set { _lives = value; }
+            set { _lives = value; }
         }
 
 

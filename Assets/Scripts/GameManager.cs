@@ -100,6 +100,11 @@ namespace AlienImmigration
                     Instance.highscoreCanvasEndOfGame.gameObject.SetActive(true);
                     break;
 
+                case (GameState.GameReset):
+                    Instance.GetComponent<HighScoreHandler>().Score = 0;
+                    Instance.SwitchState(GameState.MainMenu);
+                    break;
+
                 case (GameState.Quit):
                     Application.Quit();
 #if UNITY_EDITOR
