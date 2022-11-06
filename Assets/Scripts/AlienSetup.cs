@@ -23,11 +23,6 @@ public class AlienSetup : MonoBehaviour
     public TMP_Text speciesText;
     public TMP_Text ageText;
 
-    void Start()
-    {
-        CreateAlien(spawnAmount);
-    }
-
     public void CreateAlien(int amount)
     {
         for (int i = 0; i < amount; i++)
@@ -51,7 +46,7 @@ public class AlienSetup : MonoBehaviour
                 x.fullAge = AgeStuff(RandomizeSpecies(), true);
                 x.canPass = true;
 
-                alienManagerScript.aliensSpawned.Add(x);
+                alienManagerScript.alienSpawned = x;
 
                 alienImage.sprite = x.picture;
                 occupationText.text = x.occupation;
@@ -107,7 +102,7 @@ public class AlienSetup : MonoBehaviour
                     x.canPass = true;
                 }
 
-                alienManagerScript.aliensSpawned.Add(x);
+                alienManagerScript.alienSpawned = x;
 
                 alienImage.sprite = x.picture;
                 occupationText.text = x.occupation;

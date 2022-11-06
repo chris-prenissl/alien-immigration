@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class AlienManager : MonoBehaviour
 {
-    public List<AlienPropertys> aliensSpawned;
+    public AlienPropertys alienSpawned;
 }
