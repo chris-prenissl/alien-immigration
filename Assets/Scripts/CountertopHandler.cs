@@ -12,12 +12,21 @@ namespace Booth.Countertop
     {
         #region Fields
 
-        [SerializeField] private Button ruleBookSmall;
-        [SerializeField] private Button ruleBookLarge;
         [SerializeField] private Button alienIDSmall;
         [SerializeField] private Button alienIDLarge;
         [SerializeField] private Button acceptButton;
         [SerializeField] private Button rejectButton;
+
+        [Header("Rule book")]
+        [SerializeField] private Button ruleBookSmall;
+        [SerializeField] private Button ruleBookLarge;
+        [SerializeField] private Image ruleBookBackImage;
+
+        [SerializeField] private Sprite rulesBookRulesTab;
+        [SerializeField] private Sprite rulesBookDrociamiteTab;
+        [SerializeField] private Sprite rulesBookBhucanderTab;
+        [SerializeField] private Sprite rulesBookHuliphanTab;
+
 
         private bool _rejected;
         private bool _accepted;
@@ -34,18 +43,6 @@ namespace Booth.Countertop
         #endregion
 
         #region Public Functions
-
-        public void ZoomRuleBook()
-        {
-            ruleBookSmall.interactable = false;
-            ruleBookLarge.gameObject.SetActive(true);
-        }
-
-        public void CloseLargeRuleBook()
-        {
-            ruleBookSmall.interactable = true;
-            ruleBookLarge.gameObject.SetActive(false);
-        }
 
         public void ZoomAlienID()
         {
@@ -70,6 +67,37 @@ namespace Booth.Countertop
             _rejected = true;
             CheckForCorrectChoice();
         }
+
+        //Rule book tabs
+
+        public void ZoomRuleBook()
+        {
+            ruleBookSmall.interactable = false;
+            ruleBookLarge.gameObject.SetActive(true);
+            ruleBookBackImage.sprite = rulesBookRulesTab;
+        }
+
+        public void CloseLargeRuleBook()
+        {
+            ruleBookSmall.interactable = true;
+            ruleBookLarge.gameObject.SetActive(false);
+        }
+
+        public void OpenDrociamiteTab()
+        {
+            ruleBookBackImage.sprite = rulesBookDrociamiteTab;
+        }
+
+        public void OpenBhucandereTab()
+        {
+            ruleBookBackImage.sprite = rulesBookBhucanderTab;
+        }
+
+        public void OpenHuliapianTab()
+        {
+            ruleBookBackImage.sprite = rulesBookHuliphanTab;
+        }
+
         #endregion
 
         #region Private Functions
