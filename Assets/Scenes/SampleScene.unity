@@ -1005,7 +1005,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 848246645319259317, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1128644366780183594, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1110,6 +1110,18 @@ PrefabInstance:
     - target: {fileID: 5015373247816197896, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5016454028613568310, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_fontSize
+      value: 121.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5016454028613568310, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5016454028613568310, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 121.3
       objectReference: {fileID: 0}
     - target: {fileID: 5096992274930486974, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1313,7 +1325,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8924673915141303030, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8924673915141303032, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

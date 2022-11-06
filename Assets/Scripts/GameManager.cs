@@ -7,6 +7,7 @@ using UnityEditor.UI;
 using Booth.Timer;
 using AlienImmigration.Audio;
 using AlienImmigration.LifeCounter;
+using Booth.Countertop;
 
 namespace AlienImmigration
 {
@@ -111,6 +112,7 @@ namespace AlienImmigration
                     Instance.GetComponent<HighScoreHandler>().Score = 0;
                     Instance.GetComponent<LifeHandler>().Lives = 4;
                     Instance.GetComponent<PlayerNoteHandler>().NewGame = true;
+                    Instance.GetComponent<CountertopHandler>().CloseAllTabs();
                     Instance.SwitchState(GameState.MainMenu);
                     break;
 
