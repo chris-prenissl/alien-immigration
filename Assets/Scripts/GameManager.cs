@@ -84,7 +84,6 @@ namespace AlienImmigration
                 case (GameState.BoothTime):
                     Instance.GetComponent<TimerController>().ResetTimer();
                     Instance.GetComponent<TimerController>().StartTimer();
-                    //at the moment empty state to "park" the game before getting a new alien
                     break;
 
                 case (GameState.Highscore):
@@ -94,6 +93,7 @@ namespace AlienImmigration
 
                 case (GameState.Ending):
                     Instance.highscoreCanvasEndOfGame.gameObject.SetActive(true);
+                    //ToDo return to MainMenu / fresh game
                     break;
 
                 case (GameState.Quit):

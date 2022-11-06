@@ -922,6 +922,10 @@ PrefabInstance:
       propertyPath: highscoreCanvas
       value: 
       objectReference: {fileID: 670567586}
+    - target: {fileID: 857147787, guid: d862319effd693b4ab0f45237afb36c9, type: 3}
+      propertyPath: highscoreCanvasEndOfGame
+      value: 
+      objectReference: {fileID: 2035819790}
     - target: {fileID: 857147789, guid: d862319effd693b4ab0f45237afb36c9, type: 3}
       propertyPath: currentPlayerScore
       value: 
@@ -1876,6 +1880,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2008957376}
   m_CullTransparentMesh: 1
+--- !u!223 &2035819790 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 628866815124205779, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+  m_PrefabInstance: {fileID: 8924673915119394480}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2103263178 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8924673915557536804, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
@@ -1940,6 +1949,10 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 130
       objectReference: {fileID: 0}
+    - target: {fileID: 1805588166593219215, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 2034049702486980428, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
       propertyPath: m_SizeDelta.x
       value: 490
@@ -1956,6 +1969,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 565
       objectReference: {fileID: 0}
+    - target: {fileID: 2169518135065056461, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 2240470319334259631, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -2036,6 +2053,10 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 130
       objectReference: {fileID: 0}
+    - target: {fileID: 6274638694134079567, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6622142315072687686, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
       propertyPath: m_SizeDelta.x
       value: 1300
@@ -2306,8 +2327,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8924673916694605997, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9082848652725949463, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 9105455881303684809, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

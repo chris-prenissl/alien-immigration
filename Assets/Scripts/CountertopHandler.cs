@@ -76,6 +76,13 @@ namespace Booth.Countertop
         {
             if (_accepted)
             {
+
+                bool canPass = GameManager.Instance.GetComponent<AlienManager>().alienSpawned.canPass;
+
+                if (!canPass)
+                {
+                    _correctChoice = false;
+                }
                 //ToDo Request canPass
                 //ToDo correctChoice -assign highscore increase
                 if(!_correctChoice)
