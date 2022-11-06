@@ -75,8 +75,7 @@ namespace AlienImmigration
 
                 case (GameState.Starting):
                     Instance.menuCanvas.gameObject.SetActive(false);
-                    StartCoroutine(Instance.GetComponent<AudioManager>().PlayBoothMusic());
-                    Instance.SwitchState(GameState.NewAlien);
+                    StartCoroutine(Instance.GetComponent<AudioManager>().PlayBoothMusic());                    
                     break;
 
                 case (GameState.NewAlien):                   
