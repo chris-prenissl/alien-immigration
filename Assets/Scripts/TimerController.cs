@@ -38,6 +38,7 @@ namespace Booth.Timer
 
         public void ResetTimer()
         {
+            StopCoroutine(nameof(AlienTimer));
             timerSeconds = timerSecondsReference;
         }
 
@@ -52,20 +53,19 @@ namespace Booth.Timer
 
         private IEnumerator AlienTimer()
         {
-            bool done = false;
-            timer.text = timerSeconds.ToString();
-            yield return new WaitForSeconds(1);
-
-            if (timerSeconds == 0)
+            for (int i = timerSecondsReference; i >= 0; i--)
             {
-                CountertopHandler handler = GameManager.Instance.GetComponent<CountertopHandler>();
-                handler.RejectAlien();
-                done = true;
+                timerSeconds = i;
+                timer.text = timerSeconds.ToString();
+                yield return new WaitForSeconds(1);
+
+                if (timerSeconds == 0)
+                {
+                    CountertopHandler handler = GameManager.Instance.GetComponent<CountertopHandler>();
+                    handler.RejectAlien();
+                    Debug.Log("Alien Rejected");
+                }
             }
-
-            timerSeconds--;
-
-            yield return new WaitWhile(() => done == false);
         }
 
         #endregion
