@@ -28,7 +28,7 @@ public class AlienSetup : MonoBehaviour
         for (int i = 0; i < amount; i++)
         {
             //0 = Bhucander, 1 = Huliphan, 2 = Drociamite
-            int species = RandomizeSpecies();
+            int species = RandomizeSpecies() - 1;
             Debug.Log(species);
 
             if(CanPassRandomiser())
@@ -123,19 +123,19 @@ public class AlienSetup : MonoBehaviour
             if(x == 1)
             {
                 int age = Random.Range(18, possibleAlienPrpertys.ageLengthBhucander);
-                int yearOfBirth = currantYear - age;
+                int yearOfBirth = currantYear - (age + Random.Range(1, 50));
                 return yearOfBirth.ToString() + " - " + age;
             }
             else if(x == 2)
             {
                 int age = Random.Range(18, possibleAlienPrpertys.ageLengthHuliaphan);
-                int yearOfBirth = currantYear - age;
+                int yearOfBirth = currantYear - (age + Random.Range(1, 50));
                 return yearOfBirth.ToString() + " - " + age;
             }
             else
             {
                 int age = Random.Range(18, possibleAlienPrpertys.ageLengthDrociamite);
-                int yearOfBirth = currantYear - age;
+                int yearOfBirth = currantYear - (age + Random.Range(1, 50));
                 return yearOfBirth.ToString() + " - " + age;
             }
         }
