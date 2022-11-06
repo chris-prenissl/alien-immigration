@@ -110,7 +110,8 @@ namespace AlienImmigration
                 case (GameState.GameReset):
                     gameState = GameState.GameReset;
                     Instance.GetComponent<HighScoreHandler>().Score = 0;
-                    Instance.GetComponent<LifeHandler>().Lives = 4;
+                    Instance.GetComponent<LifeHandler>().Lives = 5;
+                    Instance.GetComponent<LifeHandler>().LostLife();
                     Instance.GetComponent<PlayerNoteHandler>().NewGame = true;
                     Instance.GetComponent<CountertopHandler>().CloseAllTabs();
                     Instance.SwitchState(GameState.MainMenu);

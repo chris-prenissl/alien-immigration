@@ -40,6 +40,10 @@ namespace AlienImmigration.LifeCounter
             switch (_lives)
             {
                 case (4):
+                    _lifeOne.gameObject.SetActive(true);
+                    _lifeTwo.gameObject.SetActive(true);
+                    _lifeThree.gameObject.SetActive(true);
+                    _lifeFour.gameObject.SetActive(true);
                     break;
 
                 case (3):

@@ -112,8 +112,8 @@ namespace Booth.Countertop
 
         public void CloseAllTabs()
         {
-            alienIDLarge.gameObject.SetActive(false);
-            ruleBookLarge.SetActive(false);
+            CloseLargeAlienID();
+            CloseLargeRuleBook();
             rulesBookOpeningInfoButton.SetActive(false);
         }
 
