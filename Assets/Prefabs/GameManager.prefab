@@ -9,7 +9,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4643923120599195589}
-  - component: {fileID: 5484760424801306088}
+  - component: {fileID: 857147787}
+  - component: {fileID: 857147788}
+  - component: {fileID: 857147789}
+  - component: {fileID: 7506382462219682362}
+  - component: {fileID: 5237027531037378834}
+  - component: {fileID: 8359090294974487598}
+  - component: {fileID: 989599981019596375}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -32,7 +38,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5484760424801306088
+--- !u!114 &857147787
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,3 +50,105 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc3a1d0138dd37b49b6e1de215f7651d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuCanvas: {fileID: 0}
+  creditsCanvas: {fileID: 0}
+  highscoreCanvas: {fileID: 0}
+  highscoreCanvasEndOfGame: {fileID: 0}
+--- !u!114 &857147788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902432092933865931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c833d0fe6da85ba499c72409e0de7f6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &857147789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902432092933865931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc296a7de328903448bb196ef5834e2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerNamesMainMenu: {fileID: 0}
+  playerScoresMainMenu: {fileID: 0}
+  playerNamesEndOfGame: {fileID: 0}
+  playerScoresEndOfGame: {fileID: 0}
+  currentPlayerScore: {fileID: 0}
+  playerNameInputfield: {fileID: 0}
+--- !u!114 &7506382462219682362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902432092933865931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90882960a45557841b9e3e5d154ddc52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _lifeOne: {fileID: 0}
+  _lifeTwo: {fileID: 0}
+  _lifeThree: {fileID: 0}
+  _lifeFour: {fileID: 0}
+--- !u!114 &5237027531037378834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902432092933865931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec9f982f722dfa64d9e8e0ccd03282bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ruleBookSmall: {fileID: 0}
+  ruleBookLarge: {fileID: 0}
+  alienIDSmall: {fileID: 0}
+  alienIDLarge: {fileID: 0}
+  acceptButton: {fileID: 0}
+  rejectButton: {fileID: 0}
+--- !u!114 &8359090294974487598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902432092933865931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 138e76d105c73a84caee4abe6b20a0a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnAmount: 1
+  possibleAlienPrpertys: {fileID: 11400000, guid: 783115d96c3bc68479232c35b645e964, type: 2}
+  alienFolder: {fileID: 0}
+  alienManagerScript: {fileID: 989599981019596375}
+  alienImage: {fileID: 0}
+  occupationText: {fileID: 0}
+  homePlanetText: {fileID: 0}
+  speciesText: {fileID: 0}
+  ageText: {fileID: 0}
+--- !u!114 &989599981019596375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902432092933865931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e264a36caac556649a78aa6273b94f80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aliensSpawned: []
