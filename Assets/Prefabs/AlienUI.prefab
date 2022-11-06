@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 1509749728757621576}
   - component: {fileID: 3918376221348369878}
   - component: {fileID: 3230910992578628687}
+  - component: {fileID: 1848423810465491681}
+  - component: {fileID: 5336523290867009096}
   m_Layer: 5
   m_Name: AlienUI
   m_TagString: Untagged
@@ -97,3 +99,33 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1848423810465491681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4031599816816678231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcdfc9581a7c34fc0a868212a9d325c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!111 &5336523290867009096
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4031599816816678231}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: b7d76a2b050a445449a630ee4fcd1c8b, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: e186cfd54a38a45c0a0230f91937e324, type: 2}
+  - {fileID: 7400000, guid: 0bc90f24758d0436984b764133fb7113, type: 2}
+  - {fileID: 7400000, guid: 487b3f3ba5d404d3291d527ee37f2b7d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
