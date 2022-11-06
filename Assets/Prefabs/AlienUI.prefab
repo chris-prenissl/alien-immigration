@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8078366321562254781}
   - component: {fileID: 1509749728757621576}
   - component: {fileID: 3918376221348369878}
-  - component: {fileID: 3230910992578628687}
   - component: {fileID: 1848423810465491681}
   m_Layer: 5
   m_Name: AlienUI
@@ -78,26 +77,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!95 &3230910992578628687
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4031599816816678231}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: cb5a0019638d44a5c86d01e767772e24, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1848423810465491681
 MonoBehaviour:
   m_ObjectHideFlags: 0
