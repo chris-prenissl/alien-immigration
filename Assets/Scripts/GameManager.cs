@@ -63,6 +63,7 @@ namespace AlienImmigration
                     Instance.menuCanvas.gameObject.SetActive(true);
                     Instance.creditsCanvas.gameObject.SetActive(false);
                     Instance.highscoreCanvas.gameObject.SetActive(false);
+                    Instance.highscoreCanvasEndOfGame.gameObject.SetActive(false);
                     break;
 
                 case (GameState.Credits):
