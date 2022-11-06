@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-using UnityEditor.UI;
 using Booth.Timer;
 using AlienImmigration.Audio;
 using AlienImmigration.LifeCounter;
