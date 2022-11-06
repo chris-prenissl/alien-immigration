@@ -984,7 +984,7 @@ PrefabInstance:
     - target: {fileID: 8924673915557536804, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 8300000, guid: 7db0a56927396ba45a4825ae63325ead, type: 3}
+      objectReference: {fileID: 8300000, guid: b62117f928ae5b34f968fd6676ce318c, type: 3}
     - target: {fileID: 8924673915557536804, guid: faa9f4dcb3a830542b25a396320313a0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.AudioClip, UnityEngine
