@@ -89,7 +89,6 @@ namespace Booth.Countertop
                 {
                     LifeHandler _lifeHandler = GameManager.Instance.GetComponent<LifeHandler>();
                     _lifeHandler.LostLife();
-                    GameManager.Instance.GetComponent<AlienSetup>()
                 }
             }
             else if (_rejected)

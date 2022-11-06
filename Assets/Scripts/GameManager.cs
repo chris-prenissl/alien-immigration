@@ -5,6 +5,7 @@ using UnityEngine;
 
 using UnityEditor.UI;
 using Booth.Timer;
+using AlienImmigration.Audio;
 
 
 namespace AlienImmigration
@@ -73,6 +74,7 @@ namespace AlienImmigration
 
                 case (GameState.Starting):
                     Instance.menuCanvas.gameObject.SetActive(false);
+                    StartCoroutine(Instance.GetComponent<AudioManager>().PlayBoothMusic());
                     //ToDo Initialisation of the Gameplay
                     Instance.SwitchState(GameState.NewAlien);
                     break;
@@ -120,6 +122,7 @@ namespace AlienImmigration
 
             Instance.SwitchState(GameState.MainMenu);
             Application.targetFrameRate = 60;
+            StartCoroutine(Instance.GetComponent<AudioManager>().PlayMenuMusic());
         }
 
         #endregion
