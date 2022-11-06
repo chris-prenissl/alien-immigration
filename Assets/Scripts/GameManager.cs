@@ -17,7 +17,7 @@ namespace AlienImmigration
         Starting,
         NewAlien,
         BoothTime,
-        DecisionCheck,
+        GameReset,
         Highscore,
         Ending,
         Quit,
@@ -95,8 +95,9 @@ namespace AlienImmigration
                     break;
 
                 case (GameState.Ending):
+                    int finalScore = Instance.GetComponent<HighScoreHandler>().Score;
+                    StartCoroutine(Instance.GetComponent<HighScoreHandler>().SubmitScoreRoutine(finalScore));
                     Instance.highscoreCanvasEndOfGame.gameObject.SetActive(true);
-                    //ToDo return to MainMenu / fresh game
                     break;
 
                 case (GameState.Quit):
