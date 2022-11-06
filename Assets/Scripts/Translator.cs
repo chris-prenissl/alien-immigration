@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class Translator : MonoBehaviour
 {
-    public string TranslateName(string word, int language)
+    enum language
+    {
+        
+    }
+
+    public string TranslateName(string word, int species)
     {
         string toReturn = "";
 
-        if(language == 1)
+        if(species == 1)
         {
             foreach (char c in word)
             {
@@ -121,7 +126,7 @@ public class Translator : MonoBehaviour
                 }
             }
         }
-        else if(language == 2)
+        else if(species == 2)
         {
             foreach (char c in word)
             {
@@ -233,7 +238,7 @@ public class Translator : MonoBehaviour
                 }
             }
         }
-        else if(language == 3)
+        else if(species == 3)
         {
             foreach (char c in word)
             {

@@ -27,6 +27,8 @@ public class AlienSetup : MonoBehaviour
 
     public void CreateAlien(int amount)
     {
+        if(alienManagerScript.alienSpawned != null) { Destroy(alienManagerScript.alienSpawned); }
+
         for (int i = 0; i < amount; i++)
         {
             //0 = Bhucander, 1 = Huliphan, 2 = Drociamite
@@ -50,11 +52,14 @@ public class AlienSetup : MonoBehaviour
                 alienManagerScript.alienSpawned = x;
 
                 alienImage.sprite = x.picture;
-                nameText.text = translatorScript.TranslateName(x.alienName, species + 1);
-                occupationText.text = translatorScript.TranslateName(x.occupation, species + 1);
-                homePlanetText.text = translatorScript.TranslateName(x.homePlanet, species + 1);
+                nameText.text = translatorScript.TranslateName(x.alienName, species);
+                occupationText.text = translatorScript.TranslateName(x.occupation, species);
+                //homePlanetText.text = translatorScript.TranslateName(x.homePlanet, species + 1);
+                homePlanetText.text = x.homePlanet;
                 speciesText.text = x.species;
                 ageText.text = x.fullAge.ToString();
+                
+                Debug.Log(translatorScript.TranslateName(x.alienName, species));
             }
             else
             {
@@ -107,11 +112,14 @@ public class AlienSetup : MonoBehaviour
                 alienManagerScript.alienSpawned = x;
 
                 alienImage.sprite = x.picture;
-                nameText.text = translatorScript.TranslateName(x.alienName, species + 1);
-                occupationText.text = translatorScript.TranslateName(x.occupation, species + 1);
-                homePlanetText.text = translatorScript.TranslateName(x.homePlanet, species + 1);
+                nameText.text = translatorScript.TranslateName(x.alienName, species);
+                occupationText.text = translatorScript.TranslateName(x.occupation, species);
+                //homePlanetText.text = translatorScript.TranslateName(x.homePlanet, species + 1);
+                homePlanetText.text = x.homePlanet;
                 speciesText.text = x.species;
                 ageText.text = x.fullAge.ToString();
+
+                Debug.Log(translatorScript.TranslateName(x.alienName, species));
             }
         }
     }

@@ -90,6 +90,7 @@ namespace Booth.Countertop
                     LifeHandler _lifeHandler = GameManager.Instance.GetComponent<LifeHandler>();
                     _lifeHandler.LostLife();
                 }
+                GameManager.Instance.SwitchState(GameState.NewAlien);
             }
             else if (_rejected)
             {
@@ -100,6 +101,7 @@ namespace Booth.Countertop
                     LifeHandler _lifeHandler = GameManager.Instance.GetComponent<LifeHandler>();
                     _lifeHandler.LostLife();
                 }
+                GameManager.Instance.SwitchState(GameState.NewAlien);
             }
             else
             {
