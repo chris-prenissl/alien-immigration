@@ -13,17 +13,19 @@ namespace AlienImmigration.Audio
 
         [SerializeField] private AudioSource menuMusic;
         [SerializeField] private AudioSource boothMusic;
+        [SerializeField] private AudioSource clickSounds;
         [SerializeField, Range(0, 1)] private float musicVolume;
 
         #endregion
 
         #region Public Functions
 
-        public void PlaySFX(AudioSource audioSource)
+        public void PlaySFX(AudioClip audioSound)
         {
-            if (!audioSource.isPlaying)
+            if (!clickSounds.isPlaying)
             {
-                audioSource.Play();
+                clickSounds.clip = audioSound;
+                clickSounds.Play();
             }
         }
 
