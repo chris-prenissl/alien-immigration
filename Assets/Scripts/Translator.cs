@@ -4,376 +4,463 @@ using UnityEngine;
 
 public class Translator : MonoBehaviour
 {
-    public string nameToTranslate;
-    public string translated;
-
-    public PossibleAlienPrpertys possibleAlienPrpertysScript;
-    public AlienLanguages alienLanguagesScript;
-
-    void Start()
+    public string TranslateName(string word, int language)
     {
-        /*
-        for (int i = 0; i < possibleAlienPrpertysScript.homePlanet.Count; i++)
+        string toReturn = "";
+
+        if(language == 1)
         {
-            Tramslate(possibleAlienPrpertysScript.homePlanet[i], 1);
-            alienLanguagesScript.homePlanetBhucander.Add(translated);
-            translated = "";
+            foreach (char c in word)
+            {
+                switch(c)
+                {
+                    case 'a':
+                        toReturn += "a";
+                    break;
+
+                    case 'b':
+                        toReturn += "b";
+                    break;
+
+                    case 'c':
+                        toReturn += "c";
+                    break;
+
+                    case 'd':
+                        toReturn += "d";
+                    break;
+
+                    case 'e':
+                        toReturn += "e";
+                    break;
+
+                    case 'f':
+                        toReturn += "f";
+                    break;
+
+                    case 'g':
+                        toReturn += "g";
+                    break;
+
+                    case 'h':
+                        toReturn += "h";
+                    break;
+
+                    case 'i':
+                        toReturn += "i";
+                    break;
+
+                    case 'j':
+                        toReturn += "j";
+                    break;
+
+                    case 'k':
+                        toReturn += "k";
+                    break;
+
+                    case 'l':
+                        toReturn += "l";
+                    break;
+
+                    case 'm':
+                        toReturn += ",";
+                    break;
+
+                    case 'n':
+                        toReturn += "m";
+                    break;
+
+                    case 'o':
+                        toReturn += "o";
+                    break;
+
+                    case 'p':
+                        toReturn += "p";
+                    break;
+
+                    case 'q':
+                        toReturn += "q";
+                    break;
+
+                    case 'r':
+                        toReturn += "r";
+                    break;
+
+                    case 's':
+                        toReturn += "s";
+                    break;
+
+                    case 't':
+                        toReturn += "t";
+                    break;
+
+                    case 'u':
+                        toReturn += "u";
+                    break;
+
+                    case 'v':
+                        toReturn += "v";
+                    break;
+
+                    case 'w':
+                        toReturn += "w";
+                    break;
+
+                    case 'x':
+                        toReturn += "x";
+                    break;
+
+                    case 'y':
+                        toReturn += "y";
+                    break;
+
+                    case 'z':
+                        toReturn += "z";
+                    break;
+
+                }
+            }
         }
-        */
-        
-        for (int i = 0; i < possibleAlienPrpertysScript.homePlanet.Count; i++)
+        else if(language == 2)
         {
-            Tramslate(possibleAlienPrpertysScript.homePlanet[i], 1);
-            alienLanguagesScript.homePlanetHuliaphan.Add(translated);
-            translated = "";
+            foreach (char c in word)
+            {
+                switch(c)
+                {
+                    case 'b':
+                        toReturn += "a";
+                    break;
+
+                    case 'c':
+                        toReturn += "b";
+                    break;
+
+                    case 'h':
+                        toReturn += "c";
+                    break;
+
+                    case 'a':
+                        toReturn += "d";
+                    break;
+
+                    case 'd':
+                        toReturn += "e";
+                    break;
+
+                    case 'e':
+                        toReturn += "f";
+                    break;
+
+                    case 'f':
+                        toReturn += "g";
+                    break;
+
+                    case 'g':
+                        toReturn += "h";
+                    break;
+
+                    case 'j':
+                        toReturn += "i";
+                    break;
+
+                    case 'i':
+                        toReturn += "j";
+                    break;
+
+                    case 'k':
+                        toReturn += "k";
+                    break;
+
+                    case 'l':
+                        toReturn += "l";
+                    break;
+
+                    case 'z':
+                        toReturn += "m";
+                    break;
+
+                    case 'n':
+                        toReturn += "n";
+                    break;
+
+                    case 'm':
+                        toReturn += "o";
+                    break;
+
+                    case 'y':
+                        toReturn += "p";
+                    break;
+
+                    case 'x':
+                        toReturn += "q";
+                    break;
+
+                    case 'p':
+                        toReturn += "r";
+                    break;
+
+                    case 's':
+                        toReturn += "s";
+                    break;
+
+                    case 't':
+                        toReturn += "t";
+                    break;
+
+                    case 'w':
+                        toReturn += "u";
+                    break;
+
+                    case 'v':
+                        toReturn += "v";
+                    break;
+
+                    case 'q':
+                        toReturn += "w";
+                    break;
+
+                    case 'u':
+                        toReturn += "x";
+                    break;
+
+                    case 'r':
+                        toReturn += "y";
+                    break;
+
+                    case 'o':
+                        toReturn += "z";
+                    break;
+                }
+            }
+        }
+        else if(language == 3)
+        {
+            foreach (char c in word)
+            {
+                switch(c)
+                {
+                    case 'f':
+                        toReturn += "a";
+                    break;
+
+                    case 'd':
+                        toReturn += "b";
+                    break;
+
+                    case 'c':
+                        toReturn += "b";
+                    break;
+
+                    case 'e':
+                        toReturn += "d";
+                    break;
+
+                    case 'h':
+                        toReturn += "e";
+                    break;
+
+                    case 'l':
+                        toReturn += "f";
+                    break;
+
+                    case 'g':
+                        toReturn += "g";
+                    break;
+
+                    case 'a':
+                        toReturn += "h";
+                    break;
+
+                    case 'b':
+                        toReturn += "i";
+                    break;
+
+                    case 'j':
+                        toReturn += "j";
+                    break;
+
+                    case 'i':
+                        toReturn += "k";
+                    break;
+
+                    case 'm':
+                        toReturn += "l";
+                    break;
+
+                    case 'p':
+                        toReturn += "m";
+                    break;
+
+                    case 'k':
+                        toReturn += "n";
+                    break;
+
+                    case 'o':
+                        toReturn += "o";
+                    break;
+
+                    case 'q':
+                        toReturn += "p";
+                    break;
+
+                    case 't':
+                        toReturn += "q";
+                    break;
+
+                    case 'r':
+                        toReturn += "r";
+                    break;
+
+                    case 's':
+                        toReturn += "s";
+                    break;
+
+                    case 'w':
+                        toReturn += "t";
+                    break;
+
+                    case 'x':
+                        toReturn += "u";
+                    break;
+
+                    case 'u':
+                        toReturn += "v";
+                    break;
+
+                    case 'v':
+                        toReturn += "w";
+                    break;
+
+                    case 'n':
+                        toReturn += "x";
+                    break;
+
+                    case 'z':
+                        toReturn += "y";
+                    break;
+
+                    case 'y':
+                        toReturn += "z";
+                    break;
+                }
+            }
         }
 
-        for (int i = 0; i < possibleAlienPrpertysScript.homePlanet.Count; i++)
-        {
-            Tramslate(possibleAlienPrpertysScript.homePlanet[i], 1);
-            alienLanguagesScript.homePlanetDrociamite.Add(translated);
-            translated = "";
-        }
+        return toReturn;
     }
 
-    void Tramslate(string word, int art)
+    /*
+    public void Test(string word)
     {
-        //1 = Bhucander, 2 = Huliphan, 3 = Drociamite
-        if(art == 1)
+        foreach (char c in word)
         {
-            foreach (char c in word)
+            switch(c)
             {
-                switch(c)
-                {
-                    case 'a':
-                        translated += "0";
-                    break;
-
-                    case 'b':
-                        translated += "1";
-                    break;
-
-                    case 'c':
-                        translated += "2";
-                    break;
-
-                    case 'd':
-                        translated += "3";
-                    break;
-
-                    case 'e':
-                        translated += "4";
-                    break;
-
-                    case 'f':
-                        translated += "5";
-                    break;
-
-                    case 'g':
-                        translated += "6";
-                    break;
-
-                    case 'h':
-                        translated += "7";
-                    break;
-
-                    case 'i':
-                        translated += "8";
-                    break;
-
-                    case 'j':
-                        translated += "9";
-                    break;
-
-                    case 'k':
-                        translated += "E0";
-                    break;
-
-                    case 'l':
-                        translated += "E1";
-                    break;
-
-                    case 'm':
-                        translated += "E2";
-                    break;
-
-                    case 'n':
-                        translated += "E3";
-                    break;
-
-                    case 'o':
-                        translated += "E4";
-                    break;
-
-                    case 'p':
-                        translated += "E5";
-                    break;
-
-                    case 'q':
-                        translated += "E6";
-                    break;
-
-                    case 'r':
-                        translated += "E7";
-                    break;
-
-                    case 's':
-                        translated += "E8";
-                    break;
-
-                    case 't':
-                        translated += "E9";
-                    break;
-
-                    case 'u':
-                        translated += "T0";
-                    break;
-
-                    case 'v':
-                        translated += "T1";
-                    break;
-
-                    case 'w':
-                        translated += "T2";
-                    break;
-
-                    case 'x':
-                        translated += "T3";
-                    break;
-
-                    case 'y':
-                        translated += "T4";
-                    break;
-
-                    case 'z':
-                        translated += "T5";
-                    break;
-                }
-            }
-        }
-        else if(art == 2)
-        {
-            foreach (char c in word)
-            {
-                switch(c)
-                {
-                    case 'b':
-                        translated += "a";
-                    break;
-
-                    case 'c':
-                        translated += "b";
-                    break;
-
-                    case 'h':
-                        translated += "c";
-                    break;
-
-                    case 'a':
-                        translated += "d";
-                    break;
-
-                    case 'd':
-                        translated += "e";
-                    break;
-
-                    case 'e':
-                        translated += "f";
-                    break;
-
-                    case 'f':
-                        translated += "g";
-                    break;
-
-                    case 'g':
-                        translated += "h";
-                    break;
-
-                    case 'j':
-                        translated += "i";
-                    break;
-
-                    case 'i':
-                        translated += "j";
-                    break;
-
-                    case 'k':
-                        translated += "k";
-                    break;
-
-                    case 'l':
-                        translated += "l";
-                    break;
-
-                    case 'z':
-                        translated += "m";
-                    break;
-
-                    case 'n':
-                        translated += "n";
-                    break;
-
-                    case 'm':
-                        translated += "o";
-                    break;
-
-                    case 'y':
-                        translated += "p";
-                    break;
-
-                    case 'x':
-                        translated += "q";
-                    break;
-
-                    case 'p':
-                        translated += "r";
-                    break;
-
-                    case 's':
-                        translated += "s";
-                    break;
-
-                    case 't':
-                        translated += "t";
-                    break;
-
-                    case 'w':
-                        translated += "u";
-                    break;
-
-                    case 'v':
-                        translated += "v";
-                    break;
-
-                    case 'q':
-                        translated += "w";
-                    break;
-
-                    case 'u':
-                        translated += "x";
-                    break;
-
-                    case 'r':
-                        translated += "y";
-                    break;
-
-                    case 'o':
-                        translated += "z";
-                    break;
-                }
-            }
-        }
-        else if(art == 3)
-        {
-            foreach (char c in word)
-            {
-                switch(c)
-                {
-                    case 'f':
-                        translated += "a";
-                    break;
-
-                    case 'd':
-                        translated += "b";
-                    break;
-
-                    case 'c':
-                        translated += "b";
-                    break;
-
-                    case 'e':
-                        translated += "d";
-                    break;
-
-                    case 'h':
-                        translated += "e";
-                    break;
-
-                    case 'l':
-                        translated += "f";
-                    break;
-
-                    case 'g':
-                        translated += "g";
-                    break;
-
-                    case 'a':
-                        translated += "h";
-                    break;
-
-                    case 'b':
-                        translated += "i";
-                    break;
-
-                    case 'j':
-                        translated += "j";
-                    break;
-
-                    case 'i':
-                        translated += "k";
-                    break;
-
-                    case 'm':
-                        translated += "l";
-                    break;
-
-                    case 'p':
-                        translated += "m";
-                    break;
-
-                    case 'k':
-                        translated += "n";
-                    break;
-
-                    case 'o':
-                        translated += "o";
-                    break;
-
-                    case 'q':
-                        translated += "p";
-                    break;
-
-                    case 't':
-                        translated += "q";
-                    break;
-
-                    case 'r':
-                        translated += "r";
-                    break;
-
-                    case 's':
-                        translated += "s";
-                    break;
-
-                    case 'w':
-                        translated += "t";
-                    break;
-
-                    case 'x':
-                        translated += "u";
-                    break;
-
-                    case 'u':
-                        translated += "v";
-                    break;
-
-                    case 'v':
-                        translated += "w";
-                    break;
-
-                    case 'n':
-                        translated += "x";
-                    break;
-
-                    case 'z':
-                        translated += "y";
-                    break;
-
-                    case 'y':
-                        translated += "z";
-                    break;
-                }
+                case 'b':
+                    toReturn += "a";
+                break;
+
+                case 'c':
+                    toReturn += "b";
+                break;
+
+                case 'h':
+                    toReturn += "c";
+                break;
+
+                case 'a':
+                    toReturn += "d";
+                break;
+
+                case 'd':
+                    toReturn += "e";
+                break;
+
+                case 'e':
+                    toReturn += "f";
+                break;
+
+                case 'f':
+                    toReturn += "g";
+                break;
+
+                case 'g':
+                    toReturn += "h";
+                break;
+
+                case 'j':
+                    toReturn += "i";
+                break;
+
+                case 'i':
+                    toReturn += "j";
+                break;
+
+                case 'k':
+                    toReturn += "k";
+                break;
+
+                case 'l':
+                    toReturn += "l";
+                break;
+
+                case 'z':
+                    toReturn += "m";
+                break;
+
+                case 'n':
+                    toReturn += "n";
+                break;
+
+                case 'm':
+                    toReturn += "o";
+                break;
+
+                case 'y':
+                    toReturn += "p";
+                break;
+
+                case 'x':
+                    toReturn += "q";
+                break;
+
+                case 'p':
+                    toReturn += "r";
+                break;
+
+                case 's':
+                    toReturn += "s";
+                break;
+
+                case 't':
+                    toReturn += "t";
+                break;
+
+                case 'w':
+                    toReturn += "u";
+                break;
+
+                case 'v':
+                    toReturn += "v";
+                break;
+
+                case 'q':
+                    toReturn += "w";
+                break;
+
+                case 'u':
+                    toReturn += "x";
+                break;
+
+                case 'r':
+                    toReturn += "y";
+                break;
+
+                case 'o':
+                    toReturn += "z";
+                break;
             }
         }
     }
+    */
 }

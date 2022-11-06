@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using AlienImmigration;
 
 public class AlienSetup : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class AlienSetup : MonoBehaviour
     //public AlienPropertys alienPrpertys;
 
     [SerializeField] AlienManager alienManagerScript;
+    [SerializeField] Translator translatorScript;
 
     [Header("References to text for alien")]
     public Image alienImage;
@@ -29,7 +31,6 @@ public class AlienSetup : MonoBehaviour
         {
             //0 = Bhucander, 1 = Huliphan, 2 = Drociamite
             int species = RandomizeSpecies() - 1;
-            Debug.Log(species);
 
             if(CanPassRandomiser())
             {
@@ -43,14 +44,15 @@ public class AlienSetup : MonoBehaviour
 
                 x.species = possibleAlienPrpertys.species[Random.Range(0, possibleAlienPrpertys.species.Count)];
 
-                x.fullAge = AgeStuff(RandomizeSpecies(), true);
+                x.fullAge = AgeStuff(species, true);
                 x.canPass = true;
 
                 alienManagerScript.alienSpawned = x;
 
                 alienImage.sprite = x.picture;
-                occupationText.text = x.occupation;
-                homePlanetText.text = x.homePlanet;
+                nameText.text = translatorScript.TranslateName(x.alienName, species + 1);
+                occupationText.text = translatorScript.TranslateName(x.occupation, species + 1);
+                homePlanetText.text = translatorScript.TranslateName(x.homePlanet, species + 1);
                 speciesText.text = x.species;
                 ageText.text = x.fullAge.ToString();
             }
@@ -86,11 +88,11 @@ public class AlienSetup : MonoBehaviour
 
                 if(cantPassAge)
                 {
-                    x.fullAge = AgeStuff(RandomizeSpecies(), false);
+                    x.fullAge = AgeStuff(species, false);
                 }
                 else
                 {
-                    x.fullAge = AgeStuff(RandomizeSpecies(), true);
+                    x.fullAge = AgeStuff(species, true);
                 }
 
                 if(cantPassOccupation || cantPassPlanet || cantPassAge)
@@ -105,8 +107,9 @@ public class AlienSetup : MonoBehaviour
                 alienManagerScript.alienSpawned = x;
 
                 alienImage.sprite = x.picture;
-                occupationText.text = x.occupation;
-                homePlanetText.text = x.homePlanet;
+                nameText.text = translatorScript.TranslateName(x.alienName, species + 1);
+                occupationText.text = translatorScript.TranslateName(x.occupation, species + 1);
+                homePlanetText.text = translatorScript.TranslateName(x.homePlanet, species + 1);
                 speciesText.text = x.species;
                 ageText.text = x.fullAge.ToString();
             }
@@ -176,12 +179,10 @@ public class AlienSetup : MonoBehaviour
 
         if(x == 1 || x == 2)
         {
-            Debug.Log("true" + x);
             return true;
         }
         else
         {
-            Debug.Log("false" + x);
             return false;
         }
     }
