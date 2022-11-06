@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEditor.UI;
 using Booth.Timer;
 using AlienImmigration.Audio;
-
+using AlienImmigration.LifeCounter;
 
 namespace AlienImmigration
 {
@@ -17,7 +17,7 @@ namespace AlienImmigration
         Starting,
         NewAlien,
         BoothTime,
-        DecisionCheck,
+        GameReset,
         Highscore,
         Ending,
         Quit,
@@ -61,6 +61,7 @@ namespace AlienImmigration
             switch (state)
             {
                 case (GameState.MainMenu):
+                    StartCoroutine(Instance.GetComponent<AudioManager>().PlayMenuMusic());
                     Instance.menuCanvas.gameObject.SetActive(true);
                     Instance.creditsCanvas.gameObject.SetActive(false);
                     Instance.highscoreCanvas.gameObject.SetActive(false);
@@ -75,7 +76,6 @@ namespace AlienImmigration
                 case (GameState.Starting):
                     Instance.menuCanvas.gameObject.SetActive(false);
                     StartCoroutine(Instance.GetComponent<AudioManager>().PlayBoothMusic());
-                    //ToDo Initialisation of the Gameplay
                     Instance.SwitchState(GameState.NewAlien);
                     break;
 
@@ -95,8 +95,15 @@ namespace AlienImmigration
                     break;
 
                 case (GameState.Ending):
+                    int finalScore = Instance.GetComponent<HighScoreHandler>().Score;
+                    StartCoroutine(Instance.GetComponent<HighScoreHandler>().SubmitScoreRoutine(finalScore));
                     Instance.highscoreCanvasEndOfGame.gameObject.SetActive(true);
-                    //ToDo return to MainMenu / fresh game
+                    break;
+
+                case (GameState.GameReset):
+                    Instance.GetComponent<HighScoreHandler>().Score = 0;
+                    Instance.GetComponent<LifeHandler>().Lives = 4;
+                    Instance.SwitchState(GameState.MainMenu);
                     break;
 
                 case (GameState.Quit):
@@ -122,7 +129,6 @@ namespace AlienImmigration
 
             Instance.SwitchState(GameState.MainMenu);
             Application.targetFrameRate = 60;
-            StartCoroutine(Instance.GetComponent<AudioManager>().PlayMenuMusic());
         }
 
         #endregion

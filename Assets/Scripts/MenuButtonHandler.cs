@@ -38,6 +38,11 @@ namespace MainMenu
             GameManager.Instance.SwitchState(GameState.Highscore);
         }
 
+        public void ResetGame()
+        {
+            GameManager.Instance.SwitchState(GameState.GameReset);
+        }
+
         #endregion
     }
 }

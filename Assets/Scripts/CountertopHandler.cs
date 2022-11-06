@@ -23,6 +23,8 @@ namespace Booth.Countertop
         private bool _accepted;
         private bool _correctChoice;
 
+
+        [SerializeField] private int addedScorePoints;
         #endregion
 
         #region Properties
@@ -74,40 +76,63 @@ namespace Booth.Countertop
 
         private void CheckForCorrectChoice()
         {
+            bool canPass = GameManager.Instance.GetComponent<AlienManager>().alienSpawned.canPass;
+
             if (_accepted)
             {
-
-                bool canPass = GameManager.Instance.GetComponent<AlienManager>().alienSpawned.canPass;
-
                 if (!canPass)
                 {
                     _correctChoice = false;
                 }
-                //ToDo Request canPass
-                //ToDo correctChoice -assign highscore increase
+                else
+                {
+                    _correctChoice = true;
+                }
+
                 if(!_correctChoice)
                 {
                     LifeHandler _lifeHandler = GameManager.Instance.GetComponent<LifeHandler>();
                     _lifeHandler.LostLife();
                 }
+
                 GameManager.Instance.SwitchState(GameState.NewAlien);
             }
             else if (_rejected)
             {
-                //ToDo Request canPass
-                //ToDo correctChoice -assign highscore increase
+                if(canPass)
+                {
+                    _correctChoice = false;
+
+                }
+                else
+                {
+                    _correctChoice= true;
+                }
+
                 if (!_correctChoice)
                 {
                     LifeHandler _lifeHandler = GameManager.Instance.GetComponent<LifeHandler>();
                     _lifeHandler.LostLife();
                 }
+
                 GameManager.Instance.SwitchState(GameState.NewAlien);
             }
             else
             {
-                Debug.Log("Unextpected Button Behaviour!");
+                Debug.Log("Unexpected Button Behaviour!");
             }
 
+            switch (_correctChoice)
+            {
+                case true:
+                    GameManager.Instance.GetComponent<HighScoreHandler>().Score += addedScorePoints;
+                    break;
+
+                case false:
+                    break;
+            }
+
+            _correctChoice = false;
             _accepted = false;
             _rejected = false;
         }

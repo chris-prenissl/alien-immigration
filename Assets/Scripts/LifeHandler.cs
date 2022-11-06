@@ -20,12 +20,12 @@ namespace AlienImmigration.LifeCounter
 
         #region Properties
 
-        private int _lives;
+        private int _lives = 4;
 
         public int Lives
         {
             get { return _lives; }
-            private set { _lives = value; }
+            set { _lives = value; }
         }
 
 
