@@ -73,14 +73,14 @@ namespace Booth.Countertop
         public void ZoomRuleBook()
         {
             ruleBookSmall.interactable = false;
-            ruleBookLarge.gameObject.SetActive(true);
+            ruleBookLarge.SetActive(true);
             ruleBookBackImage.sprite = rulesBookRulesTab;
         }
 
         public void CloseLargeRuleBook()
         {
             ruleBookSmall.interactable = true;
-            ruleBookLarge.gameObject.SetActive(false);
+            ruleBookLarge.SetActive(false);
         }
 
         public void OpenDrociamiteTab()
@@ -96,6 +96,11 @@ namespace Booth.Countertop
         public void OpenHuliapianTab()
         {
             ruleBookBackImage.sprite = rulesBookHuliphanTab;
+        }
+
+        public void OpenRules()
+        {
+            ruleBookBackImage.sprite = rulesBookRulesTab;
         }
 
         #endregion
