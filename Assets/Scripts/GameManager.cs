@@ -61,6 +61,7 @@ namespace AlienImmigration
             switch (state)
             {
                 case (GameState.MainMenu):
+                    StartCoroutine(Instance.GetComponent<AudioManager>().PlayMenuMusic());
                     Instance.menuCanvas.gameObject.SetActive(true);
                     Instance.creditsCanvas.gameObject.SetActive(false);
                     Instance.highscoreCanvas.gameObject.SetActive(false);
@@ -128,7 +129,6 @@ namespace AlienImmigration
 
             Instance.SwitchState(GameState.MainMenu);
             Application.targetFrameRate = 60;
-            StartCoroutine(Instance.GetComponent<AudioManager>().PlayMenuMusic());
         }
 
         #endregion
