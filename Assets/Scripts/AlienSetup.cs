@@ -19,6 +19,8 @@ public class AlienSetup : MonoBehaviour
 
     [Header("References to text for alien")]
     public Image alienImage;
+
+    public Image alienStanding;
     public TMP_Text nameText;
     public TMP_Text occupationText;
     public TMP_Text homePlanetText;
@@ -52,6 +54,7 @@ public class AlienSetup : MonoBehaviour
                 alienManagerScript.alienSpawned = x;
 
                 alienImage.sprite = x.picture;
+                alienStanding.sprite = x.picture;
                 nameText.text = translatorScript.TranslateName(x.alienName, species + 1);
                 occupationText.text = translatorScript.TranslateName(x.occupation, species + 1);
                 //homePlanetText.text = translatorScript.TranslateName(x.homePlanet, species + 1);
@@ -110,6 +113,7 @@ public class AlienSetup : MonoBehaviour
                 alienManagerScript.alienSpawned = x;
 
                 alienImage.sprite = x.picture;
+                alienStanding.sprite = x.picture;
                 nameText.text = translatorScript.TranslateName(x.alienName, species + 1);
                 occupationText.text = translatorScript.TranslateName(x.occupation, species + 1);
                 //homePlanetText.text = translatorScript.TranslateName(x.homePlanet, species + );
