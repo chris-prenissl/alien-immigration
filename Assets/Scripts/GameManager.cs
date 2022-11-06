@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEditor.UI;
 using Booth.Timer;
 using AlienImmigration.Audio;
-
+using AlienImmigration.LifeCounter;
 
 namespace AlienImmigration
 {
@@ -75,7 +75,6 @@ namespace AlienImmigration
                 case (GameState.Starting):
                     Instance.menuCanvas.gameObject.SetActive(false);
                     StartCoroutine(Instance.GetComponent<AudioManager>().PlayBoothMusic());
-                    //ToDo Initialisation of the Gameplay
                     Instance.SwitchState(GameState.NewAlien);
                     break;
 
@@ -102,6 +101,7 @@ namespace AlienImmigration
 
                 case (GameState.GameReset):
                     Instance.GetComponent<HighScoreHandler>().Score = 0;
+                    Instance.GetComponent<LifeHandler>().Lives = 4;
                     Instance.SwitchState(GameState.MainMenu);
                     break;
 
