@@ -110,6 +110,13 @@ namespace Booth.Countertop
             rulesBookOpeningInfoButton.SetActive(false);
         }
 
+        public void CloseAllTabs()
+        {
+            alienIDLarge.gameObject.SetActive(false);
+            ruleBookLarge.SetActive(false);
+            rulesBookOpeningInfoButton.SetActive(false);
+        }
+
         #endregion
 
         #region Private Functions
