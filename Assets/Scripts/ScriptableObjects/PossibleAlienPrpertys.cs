@@ -19,7 +19,7 @@ public class PossibleAlienPrpertys : ScriptableObject
     [Header("HomePlanet")]
     public List<string> homePlanet;
     public List<string> canPassPlanet;
-    public List<string> canNotPlanet;
+    public List<string> canNotPassPlanet;
 
     [Header("Species")]
     public List<string> species;

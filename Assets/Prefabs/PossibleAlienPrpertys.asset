@@ -34,8 +34,11 @@ MonoBehaviour:
   - wood worker
   - aigent
   - politics
-  canPassOccupation: []
-  canNotPassOccupation: []
+  canPassOccupation:
+  - wood worker
+  - politics
+  canNotPassOccupation:
+  - aigent
   homePlanet:
   - 2m1207
   - gliese 1214
@@ -43,8 +46,14 @@ MonoBehaviour:
   - ssc2005-10c
   - proxima centauri
   - titawin
-  canPassPlanet: []
-  canNotPlanet: []
+  canPassPlanet:
+  - 2m1207
+  - gliese 1214
+  - hd 20782
+  - ssc2005-10c
+  - proxima centauri
+  canNotPassPlanet:
+  - titawin
   species:
   - Bhucander
   - Huliaphan
